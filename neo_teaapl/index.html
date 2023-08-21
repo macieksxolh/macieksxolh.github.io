@@ -33,79 +33,82 @@
     <body >
         <header >
 
+            <!--Arxh Prwto Kouti
+            -->
             <!--logo kai ta basika-->
-            <div class="fixed top-0 w-full bg-white shadow-md">
+            <div class="fixed top-0 z-10 w-full bg-white shadow opacity-100">
 
-                <!--<div class="md:flex md:items-center md:justify-around md:mx-auto md:container" >-->
-
-                <div class="md:grid md:grid-rows-1 md:grid-cols-4 md:items-center md:justify-around md:mx-auto md:container" >
+                <div class="grid justify-between grid-cols-2 grid-rows-1 mx-auto md:grid-cols-10 lg:grid-cols-10 md:items-center md:justify-around xl:grid-cols-7 " >
 
                     <!--Logo-->
-                    <div class="col-span-1">
-                        <img src="img/logo_teaapl_2018.jpg" alt="logo_teaapl">
+                    <div class="flex items-center justify-start col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-1 xl:mx-auto">
+                        <img src="img/logo_teaapl_2018.jpg" alt="logo_teaapl" class="">
                     </div>
 
                     <!--To menou-->
 
                     <!--Felei diorfwsh (na menei starefa sthn panw akrh + ti fa kanw me thn anazhthsei) -->
 
-                    <div class="col-span-2">
+                    <div class="col-span-1 md:col-span-7 lg:col-span-7 xl:col-span-4">
 
-                        <!--<div class="bg-blue-500 lg:hidden">
-                            <img src="img/hamburger-menu-svgrepo-com.svg" alt="hamburger-menu" class="w-16 h-16 bg-slate-900">
-                        </div>-->
+                        <div class="flex items-center justify-end md:hidden">
+                            <img src="img/hamburger-menu-svgrepo-com.svg" alt="hamburger-menu" class="w-16 h-16">
+                        </div>
                     
-                        <div class="hidden lg:block">
+                        <div class="hidden md:block">
                             <nav>
-                                <ul class="flex items-center justify-center p-4 mx-auto text-base drop-shadow-lg">
-                                    <li><a href="#" class="mx-2">ΑΡΧΙΚΗ</a></li>
-                                    <li><a href="#" class="mx-2">ΤΟ ΤΑΜΕΙΟ</a></li>
-                                    <li><a href="#" class="mx-2">ΣΥΜΜΕΤΟΧΗ</a></li>
-                                    <li><a href="#" class="mx-2">ΟΙΚΟΝΟΜΙΚΑ ΣΤΟΙΧΕΙΑ</a></li>
-                                    <li><a href="#" class="mx-2">ΕΝΗΜΕΡΩΣΗ</a></li>
-                                    <li><a href="#" class="mx-2">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                                <ul class="flex items-center justify-end p-4 mx-auto md:justify-start xl:text-base md:text-xs lg:text-sm drop-shadow-lg">
+                                    <li><a href="#" class="mx-1 lg:mx-2">ΑΡΧΙΚΗ</a></li>
+                                    <li><a href="#" class="mx-1 lg:mx-2">ΤΟ ΤΑΜΕΙΟ</a></li>
+                                    <li><a href="#" class="mx-1 lg:mx-2">ΣΥΜΜΕΤΟΧΗ</a></li>
+                                    <li><a href="#" class="mx-1 lg:mx-2">ΟΙΚΟΝΟΜΙΚΑ ΣΤΟΙΧΕΙΑ</a></li>
+                                    <li><a href="#" class="mx-1 lg:mx-2">ΕΝΗΜΕΡΩΣΗ</a></li>
+                                    <li><a href="#" class="mx-1 lg:mx-2">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
                                 </ul>
                             </nav>
                         </div>
 
                     </div>
 
-                    <div class="col-span-1 p-4 md:flex md:items-center md:justify-around md:mx-auto md:container">
-
-
-
-                        <!--Anazhthsei-->
+                    
+                    <!--Anazhthsei-->
+                    <div class="hidden xl:col-span-2 xl:p-4 xl:flex xl:items-center xl:justify-around xl:mx-auto xl:container">
+                  
                         <div class="mt-4">
                             <input class="px-4 py-2 border rounded-md" type="text" placeholder="Search...">
                             <button class="px-4 py-2 ml-2 text-white bg-blue-500 rounded-md" type="submit">Search</button>
                         </div>
         
-        
+                    </div>
+
+                    <div class="hidden md:flex md:justify-end md:items-center md:col-span-1 lg:col-span-1 xl:hidden">
+                        <img src="img/magnifer-zoom-in-svgrepo-com.svg" alt="Search" class="w-8 h-8">
                     </div>
 
                 </div>
             </div>
+            <!--Telos Prwto Kouti
+            -->
 
             <!--H Kentrikh eikona-->
 
             <!--Felh diorfwsh (Mallon kapoio keimen eswterika) -->
 
             <div class="rounded-lg shadow-lg h-800">
-                <img src="img/velos1_meg.jpg" alt="velos" >
+                <img src="img/velos1_meg_b.jpg" alt="velos" class="object-cover w-full h-full">
                 
             </div>
 
         </header>
 
         <main class="">
-            <!--grid md:grid-cols-2 md:grid-rows-3 rounded-md shadow-md-->
 
             <!--Ftiaxnw anakounwseis me morfh kartown-->
             <article class="" >
 
                 <h2 class="flex items-center justify-center p-4 mx-auto text-4xl drop-shadow-lg">Τελευταίες Ανακοινώσεις</h2>
 
-                <section class="hidden gap-6 lg:grid lg:grid-cols-3 lg:grid-rows-2">
+                <section class="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:gap-6 lg:grid-cols-3 ">
 
                     <!--Prwth anakoinwsh (panw aristera)-->
                     <div class="">
@@ -126,8 +129,8 @@
                             </div>
 
                             <!--Sunexeia ths anakoinwshs-->
-                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white" >
-                                <p>Συνέχεια της ανακοινώσεις </p>
+                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white rounded-lg shadow-lg" >
+                                <p >Συνέχεια της ανακοινώσεις </p>
                             </div>
 
                         </div>
@@ -157,7 +160,7 @@
                             </div>
 
                             <!--Sunexeia ths anakoinwshs-->
-                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white" >
+                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white rounded-lg shadow-lg" >
                                 <p>Συνέχεια της ανακοινώσεις </p>
                             </div>
 
@@ -187,7 +190,7 @@
                             </div>
 
                             <!--Sunexeia ths anakoinwshs-->
-                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white" >
+                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white rounded-lg shadow-lg" >
                                 <p>Συνέχεια της ανακοινώσεις </p>
                             </div>
 
@@ -217,7 +220,7 @@
                             </div>
 
                             <!--Sunexeia ths anakoinwshs-->
-                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white" >
+                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white rounded-lg shadow-lg" >
                                 <p>Συνέχεια της ανακοινώσεις </p>
                             </div>
 
@@ -247,7 +250,7 @@
                             </div>
 
                             <!--Sunexeia ths anakoinwshs-->
-                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white" >
+                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white rounded-lg shadow-lg" >
                                 <p>Συνέχεια της ανακοινώσεις </p>
                             </div>
 
@@ -277,7 +280,7 @@
                             </div>
 
                             <!--Sunexeia ths anakoinwshs-->
-                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white" >
+                            <div class="flex-grow-0 p-2 my-2 text-lg text-black bg-white rounded-lg shadow-lg" >
                                 <p>Συνέχεια της ανακοινώσεις </p>
                             </div>
 
@@ -294,39 +297,39 @@
 
                 <h2 class="flex items-center justify-center p-4 mx-auto text-4xl drop-shadow-lg">Συχνοί Σύνδεσμοι </h2>
 
-                <section class="hidden lg:grid lg:grid-cols-4 lg:grid-rows-2">
+                <section class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:grid-rows-2">
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/ar_img.png" alt="economical image 1" class="p-2 m-2 w-36 h-36 ">
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg" >Το Αμοιβαίο Κεφάλαιο του Ταμείου </p>
                     </div>
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/dej_img.png" alt="economical image 2" class="p-2 m-2 w-36 h-36 " >
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg" >Ημερήσια Εξέλιξη τιμών</p>
                     </div>
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/atomikos_logariasmos.png" alt="atomikos_logariasmos" class="p-2 m-2 w-36 h-36 " >
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg " >Ημερήσια Εξέλιξη τιμών</p>
                     </div>
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/eisfores.png" alt="eisfores" class="p-2 m-2 w-36 h-36 " >
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg " >Εισφορές</p>
                     </div>
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/paroxes_ugeias.png" alt="eisfores" class="p-2 m-2 w-36 h-36 " >
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg " >Παροχές Υγείας </p>
                     </div>
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/paroxh_allhleguhs.png" alt="eisfores" class="p-2 m-2 w-36 h-36 " >
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg " >Παροχή Αλληλεγγύης</p>
                     </div>
 
-                    <div class="flex flex-col items-center p-4 m-4 mx-6 rounded-lg shadow-lg color-012172" >
+                    <div class="flex flex-col items-center p-4 m-4 mx-6 text-xs rounded-lg shadow-lg color-012172 md:text-sm xl:text-lg" >
                         <img src="img/paroxh_ef_apaj.png" alt="eisfores" class="p-2 m-2 w-36 h-36 " >
                         <p class="p-2 m-2 text-black bg-white shadow-lg rounded-2xl drop-shadow-lg " >Παροχή Εφάπαξ </p>
                     </div>
@@ -341,10 +344,10 @@
                 <h2 class="flex items-center justify-center p-4 mx-auto text-4xl drop-shadow-lg"> Τι Είναι Το Τ.Ε.Α.Α.Π.Λ </h2>
 
                 <!--Basikh Istoria-->
-                <section class="flex p-4 m-4 rounded-lg shadow-lg color-05acd3">
+                <section class="flex flex-col p-4 m-4 rounded-lg shadow-lg md:flex md:flex-row color-05acd3">
 
-                    <div>
-                        <img src="img/history3b.jpg" alt="History" class="p-2 w-200 h-200">
+                    <div class="">
+                        <img src="img/history3b.jpg" alt="History" class="w-1/3 p-2 h-1/3 md:w-max md:h-max">
                     </div>
 
                     <div>
@@ -381,9 +384,9 @@
                 </section>
 
                 <!--Basikes Leptomeries-->
-                <section class="flex p-4 m-4 rounded-lg shadow-lg color-05acd3" >
+                <section class="flex flex-col p-4 m-4 rounded-lg shadow-lg md:flex md:flex-row color-05acd3" >
 
-                    <div>
+                    <div class="order-2 md:order-none">
 
                         <p class="p-2 ">
                             <span class="font-bold" >
@@ -460,8 +463,8 @@
 
                     </div>
 
-                    <div>
-                        <img src="img/detailsb.jpg" alt="details" class="p-2 w-200 h-200">
+                    <div class="order-1 md:order-none">
+                        <img src="img/detailsb.jpg" alt="details" class="w-1/3 p-2 h-1/3 md:w-max md:h-max">
                     </div>
 
                 </section>
@@ -472,9 +475,9 @@
 
                     <div class="flex flex-col items-center rounded-lg shadow-lg color-bbbf95">
 
-                        <h3 class="p-4 mb-4 text-2xl" >Σημαντικά μεγέθη του Ταμείου</h3>
+                        <h3 class="p-4 mb-4 text-xl md:text-2xl" >Σημαντικά μεγέθη του Ταμείου</h3>
 
-                        <ul class="flex flex-col items-start justify-center p-4 text-lg ">
+                        <ul class="flex flex-col items-start justify-center p-4 text-base md:text-lg">
                             <li>
                                 <p>Ασφαλισμένοι 6.661</p>
                             </li>
@@ -502,9 +505,9 @@
 
                     <div class="flex flex-col items-center rounded-lg shadow-lg color-bbbf95">
 
-                        <h3 class="p-4 text-2xl" >Σημαντικοί Σταθμοί στην Ιστορία του Ταμείου</h3>
+                        <h3 class="p-4 text-xl md:text-2xl" >Σημαντικοί Σταθμοί στην Ιστορία του Ταμείου</h3>
 
-                        <ul class="flex flex-col items-start justify-center p-4 text-lg ">
+                        <ul class="flex flex-col items-start justify-center p-4 text-base md:text-lg">
                             <li>
                                 <p>2017: Έναρξη καταβολής εισφορών από Λιμενικούς</p>
                             </li>
@@ -538,12 +541,12 @@
 
                 <h2 class="flex items-center justify-center p-4 mx-auto my-8 text-4xl drop-shadow-lg"> Επικοινωνία </h2>
                                 
-                <section class="grid grid-cols-2 grid-rows-1">
+                <section class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-1">
 
                     <!--Forma epoikhnwnias-->
                     <div class="flex-col justify-center text-center" >
 
-                        <h3>Φόρμα επικοινωνίας</h3>
+                        <h3 class="text-lg">Φόρμα επικοινωνίας</h3>
 
                         <div class="container mx-auto mt-8 rounded-lg shadow-lg">                               
 
@@ -579,19 +582,19 @@
 
                     </div>
 
-                    <div class="flex-col justify-center text-start ">
+                    <div class="flex-col justify-center ">
                         
-                        <h3>Η διεύθυνση μας</h3>
+                        <h3 class="flex items-center justify-center text-lg">Η διεύθυνση μας</h3>
                     
                         <!-- Google maps -->
-                        <div class="my-4 ">
+                        <div class="flex items-center justify-center my-4">
                             <iframe class="rounded-lg shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.625643910071!2d23.72444437637669!3d37.98586489997164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd2fd05feb4d%3A0x4c5c11c46295dfaa!2sVeranzerou%2030%2C%20Athina%20104%2032!5e0!3m2!1spl!2sgr!4v1692279359023!5m2!1spl!2sgr" 
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
                                 referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
                     
-                        <div>
+                        <div class="flex flex-col items-center justify-center">
                             <p>ΔΙΕΥΘΥΝΣΗ: Βερανζέρου 30, Αθηνά, 10432</p>
                             <p>E-MAIL: info@teaapl.gr</p>
                             <p>ΤΗΛΕΦΩΝΟ: 210-5202638</p>
