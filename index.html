@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aithsh_Allaghs_Dikaiouxwn</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .collapsible {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="p-4 bg-gradient-to-r from-blue-100 to-blue-400">
+
+    <header class="max-w-md p-6 mx-auto bg-white rounded-md shadow-md ">
+
+        <div class="p-2 ">
+            <h1 class="text-xl text-center text-blue-700">ΤΑΜΕΙΟ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΣΦΑΛΙΣΗΣ ΕΛΛΗΝΙΚΟΥ ΤΜΗΜΑΤΟΣ ΔΙΕΘΝΟΥΣ ΑΣΤΥΝΟΜΙΚΩΝ ΠΥΡΟΣΒΕΣΤΩΝ ΚΑΙ ΛΙΜΕΝΙΚΩΝ (Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.- Ν.Π.Ι.Δ)</h1>
+        </div>
+
+        <div class="flex items-center justify-center p-2">
+
+            <img src="img/(Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.- Ν.Π.Ι.Δ)_2009.jpg" alt="(Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.- Ν.Π.Ι.Δ)_2009">
+            
+        </div>
+
+        <div class="p-2 text-center">
+            <p>ΔΙΕΥΘΥΝΣΗ: Ικτίνου 2, Αθηνά, 105 52</p>
+            <p>ΤΗΛΕΦΩΝΟ: 210-5227330</p>
+            <p>Φαξ.: 210-5248397</p>
+            <p>E-MAIL: info@teaapl.gr</p>
+            <p>Ιστοσελίδα: <a href="https://www.teaapl.gr/">www.teaapl.gr</a></p>
+            
+        </div>
+    </header>
+
+    <div class="max-w-md p-6 mx-auto bg-white rounded-md shadow-md ">
+        
+        <h2 class="mb-4 text-2xl font-semibold text-center text-blue-800">ΑΙΤΗΣΗ ΑΛΛΑΓΗΣ ΔΙΚΑΙΟΥΧΩΝ ΑΠΟΓΡΑΦΙΚΟ ΔΕΛΤΙΟ ΜΕΛΟΥΣ</h2>
+
+        <div class="max-w-md p-6 mx-auto bg-white rounded-md shadow-md ">
+                       
+            <!-- Credentials Form (ΑΙΤΗΣΗ ΑΛΛΑΓΗΣ) -->
+            <form action="/sendData" method="POST">
+
+                <h3 class="mb-4 text-xl font-semibold text-blue-800 text-start" >Στοιχεία μέλους</h3>
+
+                <!-- ID Field (Αριθμός ταυτότητας) -->
+                <div class="mb-4">
+                    <label for="id" class="block text-sm font-medium text-gray-700">Αριθμός ταυτότητας </label>
+                    <input type="text" id="id" name="id" placeholder="Εισαγωγή αριθμού ταυτότητας..." class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Select Dropdown -->
+                <div class="mb-4">
+                    <label for="select_Sex" class="block text-sm font-medium text-gray-700">Φύλο</label>
+                    <select id="select_Sex" name="select_Sex" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 ">
+                        <option value="select_Sex_option1">Άνδρας</option>
+                        <option value="select_Sex_option2">Γυναίκα</option>
+                        <option value="select_Sex_option3" selected>Άλλο</option>
+                    </select>
+                </div>
+
+                <!-- Select Dropdown -->
+                <div class="mb-4">
+                    <label for="select_Foreas" class="block text-sm font-medium text-gray-700">Φορέας</label>
+                    <select id="select_Foreas" name="select_Foreas" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 ">
+                        <option value="select_Foreas_option1" selected>Ελληνική Αστυνομία</option>
+                        <option value="select_Foreas_option2">Ειδικοί Φρουροί</option>
+                        <option value="select_Foreas_option3">Συν.Φύλακας</option>
+                        <option value="select_Foreas_option4">Πολ Υπαλ. ΕΛ.ΑΣ</option>
+                        <option value="select_Foreas_option5">Πυροσβεστικό Σώμα</option>
+                        <option value="select_Foreas_option6">Πυροσβ. 5ετούς</option>
+                        <option value="select_Foreas_option7">Πολ. Υπαλ. Πυρ.Σ</option>
+                        <option value="select_Foreas_option8">Λιμενικό Σώμα</option>
+                        <option value="select_Foreas_option9">Πολ Υπαλ. Λιμ. Σωμ.</option>
+                    </select>
+                </div>
+
+                <!-- First Name -->
+                <div class="mb-4">
+                    <label for="first_name" class="block text-sm font-medium text-gray-700">Όνομα</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Όνομα" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Last Name -->
+                <div class="mb-4">
+                    <label for="last_name" class="block text-sm font-medium text-gray-700">Επώνυμο</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Επώνυμο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Patronymic (Middle Name) -->
+                <div class="mb-4">
+                    <label for="patronymic" class="block text-sm font-medium text-gray-700">Πατρώνυμο</label>
+                    <input type="text" id="patronymic" name="patronymic" placeholder="Πατρώνυμο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Ημερ.Γέννησης(ΗΗ-ΜΜ-ΕΕΕΕ) (Birth Date) -->
+                <div class="mb-4">
+                    <label for="birth_date" class="block text-sm font-medium text-gray-700">Ημερομηνία Γέννησης</label>
+                    <input type="date" id="birth_date" name="birth_date"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Service (Υπηρεσία) -->
+                <div class="mb-4">
+                    <label for="service" class="block text-sm font-medium text-gray-700">Υπηρεσία</label>
+                    <input type="text" id="service" name="service" placeholder="Υπηρεσία" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Διεύθυνση Υπηρεσίας Οδός (Service Address Street)-->
+                <div class="mb-4">
+                    <label for="service_address_street" class="block text-sm font-medium text-gray-700">Διεύθυνση Υπηρεσίας Οδός</label>
+                    <input type="text" id="service_address_street" placeholder="Διεύθυνση Υπηρεσίας Οδός" name="service_address_street" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Αριθμός οδού Υπηρεσίας(Street Number) -->
+                <div class="mb-4">
+                    <label for="street_number" class="block text-sm font-medium text-gray-700">Αριθμός οδού Υπηρεσίας</label>
+                    <input type="number" id="street_number" name="street_number" placeholder="Αριθμός οδού Υπηρεσίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+                
+
+                <!-- Πόλη Υπηρεσίας(City) -->
+                <div class="mb-4">
+                    <label for="name_city" class="block text-sm font-medium text-gray-700">Πόλη Υπηρεσίας</label>
+                    <input type="text" id="name_city" name="name_city" placeholder="Πόλη Υπηρεσίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Διεύθυνση διαμονής Οδός (Residential address Street) -->
+                <div class="mb-4">
+                    <label for="residential_address_street" class="block text-sm font-medium text-gray-700">Διεύθυνση διαμονής Οδός</label>
+                    <input type="text" id="residential_address_street" name="residential_address_street" placeholder="Διεύθυνση διαμονής Οδός" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Διεύθυνση διαμονής Αριθμός (Residence address Number)-->
+                <div class="mb-4">
+                    <label for="residence_address_number" class="block text-sm font-medium text-gray-700">Διεύθυνση διαμονής Αριθμός</label>
+                    <input type="number" id="residence_address_number" name="residence_address_number" placeholder="Διεύθυνση διαμονής Αριθμός" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Διεύθυνση διαμονής Τ.Κ (Residential address P.O)-->
+                <div class="mb-4">
+                    <label for="residential_address_P.O" class="block text-sm font-medium text-gray-700">Διεύθυνση διαμονής Τ.Κ</label>
+                    <input type="text" id="residential_address_P.O" name="residential_address_P.O" placeholder="Διεύθυνση διαμονής Τ.Κ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Διεύθυνση διαμονής Πόλη (Residential address City) -->
+                <div class="mb-4">
+                    <label for="residential_address_City" class="block text-sm font-medium text-gray-700">Διεύθυνση διαμονής Πόλη</label>
+                    <input type="text" id="residential_address_City" name="residential_address_City"  placeholder="Διεύθυνση διαμονής Πόλη" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Διεύθυνση διαμονής Νομός (Residence address Prefecture) -->
+                <div class="mb-4">
+                    <label for="residence_address_Prefecture" class="block text-sm font-medium text-gray-700">Διεύθυνση διαμονής Νομός</label>
+                    <input type="text" id="residence_address_Prefecture" name="residence_address_Prefecture" placeholder="Διεύθυνση διαμονής Νομός" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- ΑΦΜ (afm) -->
+                <div class="mb-4">
+                    <label for="number_afm" class="block text-sm font-medium text-gray-700">ΑΦΜ</label>
+                    <input type="text" id="number_afm" name="number_afm" placeholder="ΑΦΜ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+        
+                <!-- Αρμόδια Δ.Ο.Υ (Competent D.O.Y) -->
+                <div class="mb-4">
+                    <label for="name_D.O.Y" class="block text-sm font-medium text-gray-700">Αρμόδια Δ.Ο.Υ</label>
+                    <input type="text" id="name_D.O.Y" name="name_D.O.Y" placeholder="Αρμόδια Δ.Ο.Υ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Τηλέφωνο Υπηρεσίας (Service Phone) -->
+                <div class="mb-4">
+                    <label for="service_phone" class="block text-sm font-medium text-gray-700">Τηλέφωνο Υπηρεσίας</label>
+                    <input type="tel" id="service_phone" name="service_phone" placeholder="Τηλέφωνο Υπηρεσίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Τηλέφωνο Οικίας (Home telephone) -->
+                <div class="mb-4">
+                    <label for="home_telephone" class="block text-sm font-medium text-gray-700">Τηλέφωνο Οικίας</label>
+                    <input type="tel" id="home_telephone" name="home_telephone" placeholder="Τηλέφωνο Οικίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Κινητό (Mobile) -->
+                <div class="mb-4">
+                    <label for="Mobile" class="block text-sm font-medium text-gray-700">Κινητό</label>
+                    <input type="tel" id="Mobile" name="Mobile" placeholder="Κινητό" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- E-mail -->
+                <div class="mb-4">
+                    <label for="email_1" class="block text-sm font-medium text-gray-700">E-mail</label>
+                    <input type="email" id="email_1" name="email_1" placeholder="E-mail" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Ημερομηνία κατάταξης (ΗΗ-ΜΜ-ΕΕΕΕ) (Date of rank) -->
+                <div class="mb-4">
+                    <label for="date_rank" class="block text-sm font-medium text-gray-700">Ημερομηνία κατάταξης</label>
+                    <input type="date" id="date_rank" name="date_rank"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Α.Μ.Κ.Α  -->
+                <div class="mb-4">
+                    <label for="number_amka" class="block text-sm font-medium text-gray-700">Α.Μ.Κ.Α</label>
+                    <input type="text" id="number_amka" name="number_amka" placeholder="Α.Μ.Κ.Α" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <h3 class="mt-10 mb-4 text-xl font-semibold text-blue-800 text-start" >Στοιχεία Δικαιούχων</h3>
+
+                <h3 class="mb-2 text-lg font-medium">Δικαιούχος 1</h3>
+
+                <!-- ΑΦΜ ή Α.Δ.Τ (afm H ADT )  1 -->
+                <div class="mb-4">
+                    <label for="number_id_beneficiary_1" class="block text-sm font-medium text-gray-700">ΑΦΜ ή Α.Δ.Τ</label>
+                    <input type="text" id="number_id_beneficiary_1" name="number_id_beneficiary_1" placeholder="ΑΦΜ ή Α.Δ.Τ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!--   Οναματεπώνυμο Δικαιούχου 1 (Full Name Beneficiary 1)-->
+                <div class="mb-4">
+                    <label for="full_name_beneficiary_1" class="block text-sm font-medium text-gray-700">Οναματεπώνυμο Δικαιούχου 1</label>
+                    <input type="text" id="full_name_beneficiary_1" name="full_name_beneficiary_1" placeholder="Οναματεπώνυμο Δικαιούχου 1" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                                
+                <!--  Σχέση 1 (Relationship 1)-->
+                <div class="mb-4">
+                    <label for="relationship_beneficiary_1" class="block text-sm font-medium text-gray-700">Σχέση 1</label>
+                    <input type="text" id="relationship_beneficiary_1" name="relationship_beneficiary_1" placeholder="Σχέση 1" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <!-- Beneficiary 2 Link -->
+                <div class="mb-4">
+                    <a href="#" class="px-4 py-2 font-medium text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none focus:ring focus:ring-gray-300" onclick="toggleCollapsible('beneficiary_2')">Δικαιούχος 2</a>
+                </div>
+
+                <!-- Beneficiary 2 Section -->
+                <div id="beneficiary_2" class="collapsible">
+                    <!-- Beneficiary 2 -->
+                    <div class="p-4 mb-4 border border-gray-300 rounded-md">
+                        <h3 class="mb-2 text-lg font-medium">Δικαιούχος 2</h3>
+                        <div class="mb-4">
+                            <label for="number_id_beneficiary_2" class="block text-sm font-medium text-gray-700">ΑΦΜ ή Α.Δ.Τ (2)</label>
+                            <input type="text" id="number_id_beneficiary_2" name="number_id_beneficiary_2" placeholder="ΑΦΜ ή Α.Δ.Τ (2)" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="full_name_beneficiary_2" class="block text-sm font-medium text-gray-700">Οναματεπώνυμο Δικαιούχου 2</label>
+                            <input type="text" id="full_name_beneficiary_2" name="full_name_beneficiary_2" placeholder="Οναματεπώνυμο Δικαιούχου 2" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="relationship_beneficiary_2" class="block text-sm font-medium text-gray-700">Σχέση 2</label>
+                            <input type="text" id="relationship_beneficiary_2" name="relationship_beneficiary_2" placeholder="Σχέση 2" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficiary 3 Link -->
+                <div class="mb-4">
+                    <a href="#" class="px-4 py-2 font-medium text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none focus:ring focus:ring-gray-300" onclick="toggleCollapsible('beneficiary_3')">Δικαιούχος 3</a>
+                </div>
+
+                <!-- Beneficiary 3 Section -->
+                <div id="beneficiary_3" class="collapsible">
+                    <!-- Beneficiary 3 -->
+                    <div class="p-4 mb-4 border border-gray-300 rounded-md">
+                        <h3 class="mb-2 text-lg font-medium">Δικαιούχος 3</h3>
+                        <div class="mb-4">
+                            <label for="number_id_beneficiary_3" class="block text-sm font-medium text-gray-700">ΑΦΜ ή Α.Δ.Τ (3)</label>
+                            <input type="text" id="number_id_beneficiary_3" name="number_id_beneficiary_3" placeholder="ΑΦΜ ή Α.Δ.Τ (3)" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="full_name_beneficiary_3" class="block text-sm font-medium text-gray-700">Οναματεπώνυμο Δικαιούχου 3</label>
+                            <input type="text" id="full_name_beneficiary_3" name="full_name_beneficiary_3" placeholder="Οναματεπώνυμο Δικαιούχου 3" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="relationship_beneficiary_3" class="block text-sm font-medium text-gray-700">Σχέση 3</label>
+                            <input type="text" id="relationship_beneficiary_3" name="relationship_beneficiary_3" placeholder="Σχέση 3" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficiary 4 Link -->
+                <div class="mb-4">
+                    <a href="#" class="px-4 py-2 font-medium text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none focus:ring focus:ring-gray-300" onclick="toggleCollapsible('beneficiary_4')">Δικαιούχος 4</a>
+                </div>
+
+                <!-- Beneficiary 4 Section -->
+                <div id="beneficiary_4" class="collapsible">
+                    <!-- Beneficiary 4 -->
+                    <div class="p-4 mb-4 border border-gray-300 rounded-md">
+                        <h3 class="mb-2 text-lg font-medium">Δικαιούχος 4</h3>
+                        <div class="mb-4">
+                            <label for="number_id_beneficiary_4" class="block text-sm font-medium text-gray-700">ΑΦΜ ή Α.Δ.Τ (4)</label>
+                            <input type="text" id="number_id_beneficiary_4" name="number_id_beneficiary_4" placeholder="ΑΦΜ ή Α.Δ.Τ (4)" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="full_name_beneficiary_4" class="block text-sm font-medium text-gray-700">Οναματεπώνυμο Δικαιούχου 4</label>
+                            <input type="text" id="full_name_beneficiary_4" name="full_name_beneficiary_4" placeholder="Οναματεπώνυμο Δικαιούχου 4" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="relationship_beneficiary_4" class="block text-sm font-medium text-gray-700">Σχέση 4</label>
+                            <input type="text" id="relationship_beneficiary_4" name="relationship_beneficiary_4" placeholder="Σχέση 4" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficiary 5 Link -->
+                <div class="mb-4">
+                    <a href="#" class="px-4 py-2 font-medium text-gray-700 rounded-md hover:bg-gray-200 focus:outline-none focus:ring focus:ring-gray-300" onclick="toggleCollapsible('beneficiary_5')">Δικαιούχος 5</a>
+                </div>
+
+                <!-- Beneficiary 5 Section -->
+                <div id="beneficiary_5" class="collapsible">
+                    <!-- Beneficiary 5 -->
+                    <div class="p-4 mb-4 border border-gray-300 rounded-md">
+                        <h3 class="mb-2 text-lg font-medium">Δικαιούχος 5</h3>
+                        <div class="mb-4">
+                            <label for="number_id_beneficiary_5" class="block text-sm font-medium text-gray-700">ΑΦΜ ή Α.Δ.Τ (5)</label>
+                            <input type="text" id="number_id_beneficiary_5" name="number_id_beneficiary_5" placeholder="ΑΦΜ ή Α.Δ.Τ (5)" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="full_name_beneficiary_5" class="block text-sm font-medium text-gray-700">Οναματεπώνυμο Δικαιούχου 5</label>
+                            <input type="text" id="full_name_beneficiary_5" name="full_name_beneficiary_5" placeholder="Οναματεπώνυμο Δικαιούχου 5" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="relationship_beneficiary_5" class="block text-sm font-medium text-gray-700">Σχέση 5</label>
+                            <input type="text" id="relationship_beneficiary_5" name="relationship_beneficiary_5" placeholder="Σχέση 5" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700" >
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Ημερ.Λήψης (ΗΗ-ΜΜ-ΕΕΕΕ) (Date of Download) -->
+                <div class="mb-4">
+                    <label for="date_download" class="block text-sm font-medium text-gray-700">Ημερ.Λήψης</label>
+                    <input type="date" id="date_download" name="date_download"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Ημερ.Δ.Σ (ΗΗ-ΜΜ-ΕΕΕΕ) (Date of D.S) -->
+                <div class="mb-4">
+                    <label for="date_d_s" class="block text-sm font-medium text-gray-700">Ημερ.Δ.Σ</label>
+                    <input type="date" id="date_d_s" name="date_d_s"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                
+                <!-- Ημερ.Καταχ. (ΗΗ-ΜΜ-ΕΕΕΕ) (Registration Dates) -->
+                <div class="mb-4">
+                    <label for="registration_date" class="block text-sm font-medium text-gray-700">Ημερ.Καταχ</label>
+                    <input type="date" id="registration_date" name="registration_date"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                </div>
+
+                <h3>Αντιπρόσωπος Νομού</h3>
+
+
+                
+                <!-- Checkbox -->
+                <div class="mt-4 mb-4">
+                    <input type="checkbox" id="agreeToTerms" name="agreeToTerms" class="mr-2">
+                    <label for="agreeToTerms" class="text-sm text-gray-700">Δηλώνω υπεύθυνα ότι τα παραπάνω είναι αληθή.</label>
+                </div>
+                
+
+                <!-- Submit and Reset Buttons -->
+                <div class="flex">
+                    <div class="p-2">
+                        <button type="submit" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">
+                            Submit
+                        </button>
+                    </div>
+
+                    <div class="p-2">
+                        <button type="reset" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">
+                            reset
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="flex items-center justify-center p-4" >
+            <p class="text-sm">&copy;  2023  teaapl </p>
+            <p class="p-2">|</p>
+            <p class="text-sm">Developed by SOFTBIZ </p>
+        </div>
+
+    </div>
+
+    
+
+    <!-- JavaScript to toggle the collapsible section -->
+    <script>
+        function toggleCollapsible(id) {
+            var element = document.getElementById(id);
+            if (element.classList.contains("show")) {
+                element.classList.remove("show");
+            } else {
+                element.classList.add("show");
+            }
+        }
+    </script>
+
+</body>
+</html>
