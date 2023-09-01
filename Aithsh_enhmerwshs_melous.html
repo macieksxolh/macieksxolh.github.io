@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αίτηση ενημέρωσης μέλους</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .collapsible {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head> <!--bg-gradient-to-r from-blue-100 to-blue-400-->
+<body class="bg-gradient-to-r from-blue-100 to-blue-400 ">
+
+    <div class="bg-[url('img/cool-background_4.svg')] bg-cover bg-center h-screen ">
+
+        <header class="max-w-md p-6 mx-auto bg-white rounded-md shadow-md ">
+
+            <div class="p-2 ">
+                <h1 class="text-xl text-center text-blue-700">ΤΑΜΕΙΟ ΕΠΑΓΓΕΛΜΑΤΙΚΗΣ ΑΣΦΑΛΙΣΗΣ ΕΛΛΗΝΙΚΟΥ ΤΜΗΜΑΤΟΣ ΔΙΕΘΝΟΥΣ ΑΣΤΥΝΟΜΙΚΩΝ ΠΥΡΟΣΒΕΣΤΩΝ ΚΑΙ ΛΙΜΕΝΙΚΩΝ (Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.- Ν.Π.Ι.Δ)</h1>
+            </div>
+
+            <div class="flex items-center justify-center p-2">
+
+                <img src="img/(Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.- Ν.Π.Ι.Δ)_2009.jpg" alt="(Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.- Ν.Π.Ι.Δ)_2009">
+                
+            </div>
+
+            <div class="p-2 text-center">
+                <p>ΔΙΕΥΘΥΝΣΗ: Ικτίνου 2, Αθηνά, 105 52</p>
+                <p>ΤΗΛΕΦΩΝΟ: 210-5227330</p>
+                <p>Φαξ.: 210-5248397</p>
+                <p>E-MAIL: info@teaapl.gr</p>
+                <p>Ιστοσελίδα: <a href="https://www.teaapl.gr/">www.teaapl.gr</a></p>
+                
+            </div>
+        </header>
+
+        
+
+        <div class="max-w-md p-6 mx-auto bg-white rounded-md shadow-md ">
+            
+            <h2 class="mb-4 text-2xl font-semibold text-center text-blue-800">Αίτηση ενημέρωσης μέλους</h2>
+
+            <div class="max-w-md p-6 mx-auto bg-white rounded-md shadow-md ">
+                        
+                <!-- Credentials Form (ΑΙΤΗΣΗ ΑΛΛΑΓΗΣ) -->
+                <form action="/sendData" method="POST">
+
+                    <h3 class="mb-4 text-xl font-semibold text-blue-800 text-start" >Στοιχεία μέλους</h3>
+
+
+                    <!-- First Name -->
+                    <div class="mb-4">
+                        <label for="first_name" class="block text-sm font-medium text-gray-700">Όνομα</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Όνομα" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="mb-4">
+                        <label for="last_name" class="block text-sm font-medium text-gray-700">Επώνυμο</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Επώνυμο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    <!-- Patronymic (Middle Name) -->
+                    <div class="mb-4">
+                        <label for="patronymic" class="block text-sm font-medium text-gray-700">Πατρώνυμο</label>
+                        <input type="text" id="patronymic" name="patronymic" placeholder="Πατρώνυμο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    <!-- Ημερ.Γέννησης(ΗΗ-ΜΜ-ΕΕΕΕ) (Birth Date) -->
+                    <div class="mb-4">
+                        <label for="birth_date" class="block text-sm font-medium text-gray-700">Ημερομηνία Γέννησης</label>
+                        <input type="date" id="birth_date" name="birth_date"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    <!-- Service (Υπηρεσία που υπηρετώ) -->
+                    <div class="mb-4">
+                        <label for="service" class="block text-sm font-medium text-gray-700">Υπηρεσία που υπηρετώ</label>
+                        <input type="text" id="service" name="service" placeholder="Υπηρεσία που υπηρετώ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    <!-- Διεύθυνση  (Service )-->
+                    <div class="mb-4">
+                        <label for="address_street" class="block text-sm font-medium text-gray-700">Διεύθυνση Υπηρεσίας Οδός</label>
+                        <input type="text" id="address_street" placeholder="Διεύθυνση Υπηρεσίας Οδός" name="address_street" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    
+                    <!-- Τηλέφωνο (telephone) -->
+                    <div class="mb-4">
+                        <label for="telephone_1" class="block text-sm font-medium text-gray-700">Τηλέφωνο</label>
+                        <input type="tel" id="telephone_1" name="telephone_1" placeholder="Τηλέφωνο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    
+                    <!-- Κινητό (Mobile) -->
+                    <div class="mb-4">
+                        <label for="Mobile_1" class="block text-sm font-medium text-gray-700">Κινητό</label>
+                        <input type="tel" id="Mobile_1" name="Mobile_1" placeholder="Κινητό" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+                   
+                    <!-- Ημερομηνία κατάταξης (ΗΗ-ΜΜ-ΕΕΕΕ) (Date of rank) -->
+                    <div class="mb-4">
+                        <label for="date_rank" class="block text-sm font-medium text-gray-700">Ημερομηνία κατάταξης</label>
+                        <input type="date" id="date_rank" name="date_rank"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+                    <!-- ΘΕΜΑ -->
+                    <div class="mb-4">
+                        <div>
+                            <h3>ΘΕΜΑ:</h3>
+
+                            <p>&lt;&lt; Χορήση ενημερωτικού σημειώματος του Ταμείου Επαγγελματικής Ασφάλισης Ελληνικού Τμήματος Διεθνούς Ενώσεως Αστυνομικών Πυροσβεστών και Λιμενικών &gt;&gt;</p>
+                        </div>
+                    </div>
+
+                    <!-- Προς -->
+                    <div class="mb-4">
+                        <div>
+                            <h3>Προς:</h3>
+
+                            <p>Το <span class="font-bold">Τ</span>αμείο 
+                                <span class="font-bold">Ε</span>παγγελματικής <span class="font-bold">Α</span>σφάλισης <span class="font-bold">Ε</span>λληνικού 
+                                <span class="font-bold">Τ</span>μήματος <span class="font-bold">Δ</span>ιεθνούς <span class="font-bold">Ε</span>νώσεως
+                                <span class="font-bold">Α</span>στυνομικών <span class="font-bold">Π</span>υροσβεστών και <span class="font-bold">Λ</span>ιμενικών
+                                (Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Οι 3 επιλογες -->
+                    <fieldset class="p-4 mb-4 border border-gray-300 rounded-md">
+                        <legend class="text-sm font-medium text-gray-700">Παρακαλώ να με ενημερώσετε (α ή β ή γ) εάν:</legend>
+                        
+                        <div class="mt-2">
+                            <label class="inline-flex items-center text-sm font-medium text-gray-700">
+                                <input type="radio" class="form-radio focus:outline-none focus:ring-2 focus:ring-blue-700" name="group" value="update_option1" required>
+                                <span class="ml-2">α) Είμαι εγγεγραμμένο μέλος του Τ.Ε.Α.Ε.Τ.Δ.Ε.Α.Π.Λ.</span>
+                            </label>
+                        </div>
+                    
+                        <div class="mt-2">
+                            <label class="inline-flex items-center text-sm font-medium text-gray-700">
+                                <input type="radio" class="form-radio focus:outline-none focus:ring-2 focus:ring-blue-700" name="group" value="update_option2">
+                                <span class="ml-2">β) Τον αριθμό των μεριδίων του Α/Κ &lt;&lt; ΤΕΑ ΑΣΤΥΝΟΜΙΚΩΝ ΠΥΡΟΣΒΕΣΤΩΝ ΛΙΜΕΝΙΚΩΝ ΜΙΚΤΟ &gt;&gt; που έχει η ατομική μου μερίδα μέχρι και σήμερα και η τρέχουσα αξία τους.</span>
+                            </label>
+                        </div>
+                    
+                        <div class="mt-2">
+                            <label class="inline-flex items-center text-sm font-medium text-gray-700">
+                                <input type="radio" class="form-radio focus:outline-none focus:ring-2 focus:ring-blue-700" name="group" value="update_option3">
+                                <span class="ml-2">γ) Εάν έχω δικαίωμα διαγραφής λαμβάνοντας την ατομική μου μερίδα.</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    
+                    
+
+                    <!-- Checkbox with required attribute 1-->
+                    <div class="mt-4 mb-4">
+                        <label for="agreeToTerms_1" class="text-sm text-gray-700">
+                            <input type="checkbox" id="agreeToTerms_1" name="agreeToTerms_1" class="mr-2" required>
+                            Δηλώνω υπεύθυνα ότι τα παραπάνω είναι αληθή.
+                        </label>
+                    </div>
+
+
+                    <!-- Submit and Reset Buttons -->
+                    <div class="flex flex-col items-center justify-center p-2 sm:flex-row sm:p-4">
+                        <div class="p-4">
+                            <button type="submit" name="send_button" value="send_button_val" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">
+                                Υποβολή
+                            </button>
+                        </div>
+
+                        <!--Καθαρισμός-->
+                        <div class="p-4">
+                            <button type="reset" class="px-4 py-2 font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">
+                                Επαναφορά 
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="flex items-center justify-center p-4" >
+                <p class="text-sm">&copy;  2023  teaapl </p>
+                <p class="p-2">|</p>
+                <p class="text-sm">Developed by SOFTBIZ </p>
+            </div>
+
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button onclick="scrollToTop()" id="scrollToTopButton" class="fixed hidden p-2 text-white bg-gray-500 rounded-full bottom-4 right-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+
+        <!-- JavaScript -->
+        <script src="project-teaapl.js"></script>
+
+
+    </div>
+</body>
+</html>
