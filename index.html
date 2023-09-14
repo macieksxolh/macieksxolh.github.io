@@ -3,223 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New-business-analytics</title>
+    <title>Portal_TEAAPL</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
+<body class="font-sans bg-gray-200">
+    <!-- Your Tailwind CSS content here -->
+    <div class="md:flex md:min-h-screen">
+        <!-- Sidebar -->
 
-        <div class="grid grid-cols-5">
+        <!--<li class="px-4 py-2"><img src="img/menu-hamburger-svgrepo-com.svg" alt="menu-hamburger" class="w-16 h-16 sm:hidden"></li>-->
 
-            <div class="col-span-1">
+        <!--<nav class="p-4 sm:hidden bg-custom-new-blue">
+            <div class="flex items-center justify-between">
 
                 <div>
-                    <img src="img/ba_gr_logo.png" alt="business-analytics-logo" class="w-12 h-12">
+                    <a href="#" class="text-2xl font-bold text-white">Portal Ασφαλισμένου</a>
                 </div>
 
-            </div>
-
-            <div class="col-span-3">
-
-                <div class="">
-                    <nav>
-                        <ul class="flex items-center justify-end p-4 mx-auto ">
-                            <li><a href="#" class="mx-1 lg:mx-2">ΑΡΧΙΚΗ</a></li>
-                            <li><a href="#" class="mx-1 lg:mx-2">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
-                            <li><a href="#" class="mx-1 lg:mx-2">ΕΝΗΜΕΡΩΣΗ</a></li>
-                        </ul>
-                    </nav>
-                </div>
                 
             </div>
+        </nav> -->
 
-            <div class="col-span-1">
+        <aside class="hidden text-white transition-transform duration-1000 transform sm:block md:w-1/6 bg-custom-new-blue">
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">Portal Ασφαλισμένου</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b sm:flex-row md:flex-col lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                
 
-                <div class="mt-4">
-                    <input class="px-4 py-2 border rounded-md" type="text" placeholder="Search...">
-                    <button class="px-4 py-2 ml-2 text-white bg-blue-500 rounded-md" type="submit">Search</button>
+                <li class="px-4 py-2 hover:bg-blue-300">Dashboard</li>
+                <li class="px-4 py-2 hover:bg-blue-300">Στοιχεία Ασφαλισμένου</li>
+                <li class="px-4 py-2 hover:bg-blue-300">Εισφορές</li>
+                <li class="px-4 py-2 hover:bg-blue-300">Ατομικός λογαριασμός</li>
+                <li class="px-4 py-2 hover:bg-blue-300">Έγγραφα</li>
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b sm:flex-row md:flex-col lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class="px-4 py-2 hover:bg-blue-300">Ασφαλισμένοι</li>
+                <li class="px-4 py-2 hover:bg-blue-300">Χρήστες</li>
+                <li class="px-4 py-2 hover:bg-blue-300">Ιστορικό Ενεργειών</li>
+
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="md:flex-grow ">
+            <!-- Header -->
+            <header class="flex items-center justify-between p-2 bg-white max-h-20">
+
+                <div class="sm:hidden">
+                    <button id="menu-toggle" class="text-2xl text-white focus:outline-none">
+                        <img src="img/mobilehamburgermajor-svgrepo-com.svg" alt="menu-hamburger" class="w-8 h-8 ">
+                    </button>
+                </div>
+
+                <p class="p-1 text-sm sm:p-2 sm:text-lg md:text-2xl">ΤΕΑΑΠΛ</p>
+
+                <div class="flex items-center p-2">
+
+                    <img src="img/flag-for-greece-svgrepo-com.svg" alt="flag-for-greece" class="w-6 h-6 md:p-2 md:w-12 md:h-12">
+
+                    <div class="flex items-center p-1 border-l sm:p-2">
+                        
+                        <p class="p-1 text-sm sm:p-2 md:text-base">Όνομα Ασφαλισμένου</p>
+
+                        <img src="img/person-circle-svgrepo-com.svg" alt="person-circle" class="w-6 h-6 md:p-2 md:w-12 md:h-12 ">
+
+                    </div>
+
                 </div>
                 
-            </div>
+            </header>
 
-        </div>
-        
-    </header>
-
-    <main class="">
-
-        <article class="flex-col">
-
-            <section class="grid grid-cols-4">
-
-                <div class="col-span-1 p-4">
-
-                    <img src="img/cyber-brain-7633488_640.jpg" alt="cyber-brain" class="">
-
-                </div>
-
-                <div class="col-span-3 p-4">
-                    <div class="p-2">
-                        <h2>Ο μύθος της τεχνητής νοημοσύνης "ανοικτού κώδικα”</h2>
-
-                        <div class="p-2">
-                            <p class="p-2">Περίληψη άρθρου:</p>
-
-                            <p class="p-2">
-                                Μια νέα ανάλυση δείχνει ότι τα εργαλεία τεχνητής νοημοσύνης "ανοιχτού κώδικα",
-                                όπως το Llama 2,
-                                εξακολουθούν να ελέγχονται από μεγάλες εταιρείες τεχνολογίας με διάφορους τρόπους,
-                                παρά τις προσπάθειες να γίνει η τεχνητή νοημοσύνη πιο προσιτή.
-                                Το Llama 2, που κυκλοφόρησε από τη Meta,
-                                είναι ελεύθερο να το κατεβάσετε και να το τροποποιήσετε, αλλά έχει περιορισμούς στη χρήση του.
-                                Άλλα μοντέλα που κυκλοφορούν με άδειες ανοιχτού κώδικα θεωρούνται πιο ανοιχτά,
-                                αλλά αντιμετωπίζουν προκλήσεις όπως τα μυστικά δεδομένα και
-                                ο έλεγχος των πλαισίων λογισμικού από μεγάλες εταιρείες. 
-                                Η κυριαρχία λίγων εταιρειών στην τεχνητή νοημοσύνη θα μπορούσε να εμποδίσει τις δυνατότητές της
-                                και ζητείται ρύθμιση για την ενθάρρυνση εναλλακτικών λύσεων.
-                                Το άνοιγμα των προηγμένων μοντέλων ΤΝ στους επιστήμονες 
-                                θα μπορούσε να βελτιώσει την κατανόηση και να μετριάσει τους κινδύνους.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="grid grid-cols-4">
-
-                <div class="col-span-3 p-4">
-                    <div class="">
-                        <h2>Η τεχνητή νοημοσύνη θα είναι οικονομική ευλογία ή κατάρα; Η ιστορία προσφέρει στοιχεία</h2>
-
-                        <div class="p-2">
-                            <p class="p-2">Περίληψη άρθρου:</p>
-
-                            <p class="p-2">
-                                Οι οικονομολόγοι προειδοποιούν ότι τα οφέλη της τεχνητής νοημοσύνης (ΤΝ) 
-                                θα μπορούσαν να τα απολαύσουν λίγοι αντί για τους πολλούς, παρόμοια με το πώς οι 
-                                μεσαιωνικές εξελίξεις στην τεχνολογία του αγροτικού αρότρου ωφέλησαν τους ηγεμόνες που 
-                                χρησιμοποίησαν τον πλούτο για την κατασκευή καθεδρικών ναών αντί να βελτιώσουν τη ζωή των αγροτών. 
-                                Ενώ η τεχνητή νοημοσύνη προβλέπεται να δημιουργήσει πλούτο και να βελτιώσει το βιοτικό επίπεδο,
-                                εξακολουθούν να υπάρχουν ανησυχίες σχετικά 
-                                με τις επιπτώσεις της στις θέσεις εργασίας και τα μέσα διαβίωσης. 
-                                Η ιστορία έχει δείξει ότι η τεχνολογική πρόοδος μπορεί να οδηγήσει σε αβέβαιες,
-                                άνισες και ενίοτε αρνητικές οικονομικές επιπτώσεις. 
-                                Τα δυνητικά οφέλη της ΤΝ ενδέχεται να μην γίνουν ομοιόμορφα αισθητά 
-                                σε μια παγκοσμιοποιημένη οικονομία λόγω παραγόντων όπως ο ανταγωνισμός για επενδύσεις σε ΤΝ 
-                                και τα εμπόδια που αντιμετωπίζουν οι φτωχότερες χώρες. 
-                                Για να γίνει η καινοτομία αποτελεσματική για όλους,
-                                απαιτείται πολιτική δράση και δημοκρατικές μεταρρυθμίσεις,
-                                καθώς και εξέταση των δικαιωμάτων των εργαζομένων και των προγραμμάτων επανεκπαίδευσης.
-                                Το ερώτημα παραμένει αν η ΤΝ θα επιδεινώσει τις υφιστάμενες ανισότητες ή
-                                θα οδηγήσει σε μια δικαιότερη κοινωνία</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-span-1 p-4">
-
-                    <img src="img/artificial-intelligence-7649721_640.jpg" alt="artificial-intelligence" class="">
-
-                </div>
-
-            </section>
-
-            <section class="grid grid-cols-4">
-
-                <div class="col-span-1 p-4">
-
-                    <img src="img/robot-7768527_640.jpg" alt="robot-7768527" class="">
-
-                </div>
-
-                <div class="col-span-3 p-4">
-                    <div class="">
-                        <h2>Η τελευταία τεχνική μηχανικής προτροπής μετατρέπει ευρηματικά τις ατελείς 
-                            προτροπές σε εξαιρετικές αλληλεπιδράσεις για τη χρήση γεννητικής τεχνητής νοημοσύνης
-                        </h2>
-
-                        <div class="p-2">
-
-                            <p class="p-2">Περίληψη άρθρου:</p>
-
-                            <p class="p-2">
-                                Σε αυτό το άρθρο, ο συγγραφέας συζητά την έννοια ότι 
-                                η τελειότητα είναι ο εχθρός της προόδου, 
-                                τονίζοντας ότι η προσπάθεια για τέλειες προτροπές 
-                                κατά τη χρήση της δημιουργικής ΤΝ μπορεί να είναι αντιπαραγωγική. 
-                                Υποστηρίζουν ότι είναι πιο πρακτικό να δουλεύουμε με ατελείς προτροπές 
-                                και να επαναλαμβάνουμε προς την κατεύθυνση των αρκετά καλών. 
-                                Το άρθρο παρουσιάζει μια τεχνική βήμα προς βήμα για την αξιοποίηση των ατελών προτροπών,
-                                ενθαρρύνοντας τη μηχανική προτροπών με προσανατολισμό στη δράση. 
-                                Ο συγγραφέας επισημαίνει επίσης μια ερευνητική μελέτη που προτείνει τη
-                                συγκέντρωση ατελών προτροπών για καλύτερα αποτελέσματα. 
-                                Συνολικά, το άρθρο προωθεί την ιδέα ότι η υιοθέτηση της ατέλειας και 
-                                της πρακτικότητας στη μηχανική των προτροπών μπορεί να 
-                                οδηγήσει σε αποτελεσματικότερη χρήση της δημιουργικής ΤΝ.
-                            </p>
-
-                        </div>
-
-                    </div>
+            <div id="menu" class="hidden text-white transition-transform duration-1000 transform md:hidden md:w-1/6 bg-custom-new-blue">
+                <!-- Sidebar content here -->
+                <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">Portal Ασφαλισμένου</div>
+                <ul class="flex flex-col p-2 text-sm sm:border-b sm:flex-row md:flex-col lg:text-base 2xl:text-lg">
+                    <!-- Menu Items -->
                     
+    
+                    <li class="px-4 py-2 hover:bg-blue-300">Dashboard</li>
+                    <li class="px-4 py-2 hover:bg-blue-300">Στοιχεία Ασφαλισμένου</li>
+                    <li class="px-4 py-2 hover:bg-blue-300">Εισφορές</li>
+                    <li class="px-4 py-2 hover:bg-blue-300">Ατομικός λογαριασμός</li>
+                    <li class="px-4 py-2 hover:bg-blue-300">Έγγραφα</li>
+                </ul>
+    
+                <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+                <ul class="flex flex-col p-2 text-sm sm:border-b sm:flex-row md:flex-col lg:text-base 2xl:text-lg">
+                    <!-- Menu Items -->
+    
+                    <li class="px-4 py-2 hover:bg-blue-300">Ασφαλισμένοι</li>
+                    <li class="px-4 py-2 hover:bg-blue-300">Χρήστες</li>
+                    <li class="px-4 py-2 hover:bg-blue-300">Ιστορικό Ενεργειών</li>
+    
+                </ul>
+            </div>
+
+            <!-- Main content here -->
+            <div class="p-4 ">
+
+                <!--Dashboard-->
+                <div class="flex items-center justify-center p-2 ml-2 sm:justify-start max-h-20">
+
+                    <img src="img/speedometer-svgrepo-com.svg" alt="speedometer" class="w-12 h-12 ">
+
+                    <p class="px-2 text-2xl">Dashboard</p>
+
                 </div>
 
-            </section>
+                <!--grid: megalo(3 grammes x 4 stoiles), mesaio(4 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                <div class="grid grid-cols-1 grid-rows-6 gap-2 sm:grid-cols-2 sm:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 xl:gap-4">
 
-        </article>
+                    <!-- Prwtoi grammh -->
+                    <div class="col-start-1 col-end-2 row-start-1 row-end-2 sm:col-start-1 sm:col-end-3 sm:row-start-1 sm:row-end-2 xl:col-start-1 xl:col-end-5 xl:row-start-1 xl:row-end-2">
 
-        <article class="p-4">
+                        <!--Eswteriko-->
+                        <div class="p-4 m-1 bg-white border-l-4 rounded-lg shadow-lg border-custom-new-blue max-h-40">
 
-        </article>
+                            <div class="flex">
 
-        <article class="p-4">
+                                <img src="img/person-svgrepo-com.svg" alt="person" class="w-16 h-16 md:w-32 md:h-32">
 
-        </article>
-
-    </main>
-
-    <!-- footer -->
-    <footer>
-
-        <!-- div1 -->
-        <div class="p-4 lg:mx-auto bg-slate-900 ">
-
-            <h3 class="p-2 text-lg text-white lg:flex lg:items-center lg:justify-center " >Χρήσιμοι σύνδεσμοι</h3>
-
-            <div class="p-4 lg:flex lg:items-center lg:justify-center">
+                                <div>
             
-                <p class="p-2 text-base text-white "  >Συχνές ερωτήσεις</p>
-
-                <p class="p-2 text-base text-white " >Όροι χρήσης</p>
-
-                <p class="p-2 text-base text-white " >Sitemap</p>
-
-                <p class="p-2 text-base text-white " >Ποιοί είμαστε</p>
-
-                <p class="p-2 text-base text-white " >Επικοινωνία</p>
-
-                <p class="p-2 text-base text-white " >Πολιτική Newsletter</p>
-
-
-        </div>
-
-        <!-- div2 -->
-        <div class="grid grid-cols-1 grid-rows-2 p-4 mx-auto lg:flex lg:items-center lg:justify-around bg-slate-900 ">
+                                    <p class="p-2 text-custom-new-blue ">Όνομα Ασφαλισμένου: <span> Stoixeia </span> </p>
             
-            <div class="flex justify-center text-center lg:text-left">
+                                    <p class="p-2 text-custom-new-blue">ΑΜ Ασφαλισμένου: <span> Stoixeia</span> </p>
+            
+                                    <p class="p-2 text-custom-new-blue">Ημ. Εγγραφής: <span> Stoixeia</span> </p>
+            
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Telos Eswteriko-->
+
+                    <!--Telos Prwtoi grammh -->
+                    </div>
+
+                    <!-- Deuterh grammh, 4 stoiles -->
+
+                    <!--1/4 stoiles stn deuterh grammh-->
+                    <div class="col-start-1 col-end-2 row-start-2 row-end-3 sm:col-start-1 sm:col-end-2 sm:row-start-2 sm:row-end-3 xl:col-start-1 xl:col-end-2 xl:row-start-2 xl:row-end-3 ">
+                        
+                        <!--eswteriko-->
+                        <div class="grid w-full h-full grid-cols-3 p-2 bg-white border-l-4 rounded-lg shadow-lg border-custom-new-blue max-h-40">
+
+                            <div class="flex flex-col col-span-2">
+
+                                <p class="p-2 text-custom-new-blue">Σύνολο Ατομικού Λογαριασμού</p>
+
+                                <p class="p-1 ">Όνομα Ασφ. ή οτδ:</p>
+
+                            </div>
+
+                            <div class="flex items-center justify-center col-span-1">
+
+                                <img src="img/chart-line-up-svgrepo-com.svg" alt="line-up" class="w-16 h-16">
+
+                            </div>
+
+                        <!-- Telos eswteriko-->    
+                        </div>
+                        
+                    <!--Telos 1/4 stoiles stn deuterh grammh-->
+                    </div>
+
+
+                    <!--2/4 stoiles stn deuterh grammh-->
+                    <div class="col-start-1 col-end-2 row-start-3 row-end-4 sm:col-start-2 sm:col-end-3 sm:row-start-2 sm:row-end-3 xl:col-start-2 xl:col-end-3 xl:row-start-2 xl:row-end-3 ">
+
+                        <!--eswteriko-->
+                        <div class="grid w-full h-full grid-cols-3 p-2 bg-white border-l-4 border-red-600 rounded-lg shadow-lg max-h-40">
+
+                            <div class="flex flex-col col-span-2">
+
+                                <p class="p-2 text-red-600">Οφειλόμενη Ποσό</p>
+
+                                <p class="p-1 ">Όνομα Ασφ. ή οτδ: <span> Stoixeia</span></p>
+
+                            </div>
+
+                            
+                            <div class="flex items-center justify-center col-span-1">
+
+                                <img src="img/scale-weight-weights-scales-balance-svgrepo-com.svg" alt="scale-weight" class="w-16 h-16">
+
+                            </div>
+
+                        <!-- Telos eswteriko-->
+                        </div>    
+
+                    <!--Telos 2/4 stoiles stn deuterh grammh-->            
+                    </div>
+
+                    <!-- 3/4 stoiles stn deuterh grammh-->
+                    <div class="col-start-1 col-end-2 row-start-4 row-end-5 sm:col-start-1 sm:col-end-2 sm:row-start-3 sm:row-end-4 xl:col-start-3 xl:col-end-4 xl:row-start-2 xl:row-end-3 ">
+
+                        <!--eswteriko-->
+                        <div class="grid w-full h-full grid-cols-3 p-2 bg-white border-l-4 rounded-lg shadow-lg max-h-40 border-cyan-400">
+
+                            
+                            <div class="flex flex-col col-span-2">
+
+                                <h2 class="p-2 text-cyan-400">Χρήστες</h2>
+
+                                <p class="p-1 ">Σύνολο: <span> Stoixeia</span> </p> 
+
+                                <p class="p-1 ">Μη επιβεβαιωμένοι χρήστες: <span> Stoixeia</span></p>
+
+                            </div>
+
+                            
+                            <div class="flex items-center justify-center col-span-1">
+
+                                <img src="img/user-group-svgrepo-com.svg" alt="user-group" class="w-16 h-16">
+
+                            </div>
+                        
+                        <!--Telos eswteriko-->
+                        </div>
+
+                    <!--Telos 3/4 stoiles stn deuterh grammh-->
+                    </div>
+
+                    <!-- 4/4 stoiles stn deuterh grammh-->
+                    <div class="col-start-1 col-end-2 row-start-5 row-end-6 sm:col-start-2 sm:col-end-3 sm:row-start-3 sm:row-end-4 xl:col-start-4 xl:col-end-5 xl:row-start-2 xl:row-end-3 ">
+
+                        <!--eswteriko -->
+                        <div class="grid w-full h-full grid-cols-3 p-2 bg-white border-l-4 rounded-lg shadow-lg max-h-40 border-cyan-400">
+
+                            <div class="flex flex-col col-span-2">
+
+                                <h2 class="p-2 text-cyan-400">Ασφαλισμένοι</h2>
+
+                                <p class="p-1 ">Σύνολο: <span> Stoixeia</span></p>
+
+                                <p class="p-1">Ενεργοί: <span> Stoixeia</span></p>
+
+                                <p class="p-1">Διεγραμμένοι: <span> Stoixeia</span></p>
+
+                            </div>
+
+                            
+                            <div class="flex items-center justify-center col-span-1">
+
+                                <img src="img/user-group-svgrepo-com.svg" alt="user-group" class="w-16 h-16">
+
+
+                            </div> 
+
+                        <!--Telos eswteriko -->
+                        </div>
+
+                    <!--Telos 4/4 stoiles stn deuterh grammh-->
+                    </div>
+
+                    <!-- Trith grammh -->
+                    <div class="col-start-1 col-end-2 row-start-6 row-end-7 sm:col-start-1 sm:col-end-3 sm:row-start-4 sm:row-end-5 xl:col-start-1 xl:col-end-3 xl:row-start-3 xl:row-end-4 ">
+                        
+                        <!--eswteriko-->
+                        <div class="grid w-full h-full grid-rows-3 border-l-4 rounded-lg shadow-lg border-custom-new-blue max-h-40 ">
+
+                                <div class="flex justify-between row-span-1 bg-gray-100 border-b-2 rounded-lg shadow-lg">
+
+                                    <h2 class="p-4 text-custom-new-blue">Ανάλυση Οφειλής</h2>
+
+                                    <p class="p-4 text-custom-new-blue">220 &euro;</p>
+
+                                </div>
+
+                                <div class="flex items-center justify-between flex-grow row-span-2 bg-white rounded-lg shadow-lg">
+
+                                    <div class="flex flex-col justify-center p-4">
+                                        <p class="pt-2 pl-1 text-lg">Ασφαλισμένος</p>
+
+                                        <p class="pb-2 pl-1 text-sm">Κωδικός Πληρωμής</p>
+                                    </div>
+
+                                    <p class="p-4">Stoixeia</p>
+
+                                </div> 
+                                
+                        <!--Telos eswteriko-->
+                        </div>
+                    
+                    <!--Telos Trith grammh -->
+                    </div>
                 
+                <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                </div>
+     
+            <!--Telos to ej.kouti-->
+            </div>
+
+            
+            <!-- Footer -->
+            <footer class="w-full p-1 bg-white md:fixed md:bottom-0 xl:p-2 max-h-28 ">
+                <!-- Footer content here -->
+                                     
                 <div class="flex-col justify-center text-center">
 
-                    <p class="p-2 text-xs text-white " >Developed by SOFTBIZ</p>
-                    <p class="p-2 text-xs text-white " >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                    <p class="p-1 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                    <p class="p-1 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
                     
                 </div>
 
-            </div>
+            </footer>
+        </main>
 
-        </div>
+        
+    </div>
 
-    </footer>
+
+    <!-- Add any external JavaScript libraries here -->
+    
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('translate-y-0');
+        });
+    </script>
 
 </body>
 </html>
