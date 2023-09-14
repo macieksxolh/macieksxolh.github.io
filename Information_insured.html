@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Στοιχειά ασφαλισμένου</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-200">
+    <!-- Your Tailwind CSS content here -->
+    <div class="md:flex md:min-h-screen">
+        <!-- Sidebar -->
+        <aside class="text-white md:w-1/6 bg-custom-new-blue">
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b lg:text-lg xl:text-2xl">Portal Ασφαλισμένου</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b sm:flex-row md:flex-col lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                <li class="px-4 py-2"><img src="img/menu-hamburger-svgrepo-com.svg" alt="menu-hamburger" class="w-16 h-16 sm:hidden"></li>
+
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Dashboard</li>
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Στοιχεία Ασφαλισμένου</li>
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Εισφορές</li>
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Ατομικός λογαριασμός</li>
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Έγγραφα</li>
+            </ul>
+
+            <div class="hidden p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start sm:block">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b sm:flex-row md:flex-col lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Ασφαλισμένοι</li>
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Χρήστες</li>
+                <li class="hidden px-4 py-2 hover:bg-blue-300 sm:block">Ιστορικό Ενεργειών</li>
+
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="md:flex-grow ">
+            <!-- Header -->
+            <header class="flex items-center justify-between p-2 bg-white max-h-20">
+
+                <p class="p-2 text-lg md:text-2xl">ΤΕΑ ΑΠΛ</p>
+
+                <div class="flex items-center p-2">
+
+                    <img src="img/flag-for-greece-svgrepo-com.svg" alt="flag-for-greece" class="w-8 h-8 p-2 md:w-12 md:h-12">
+
+                    <div class="flex items-center p-2 border-l">
+                        
+                        <p class="p-2 text-sm md:text-base">Όνομα Ασφαλισμένου</p>
+
+                        <img src="img/person-circle-svgrepo-com.svg" alt="person-circle" class="w-8 h-8 p-2 md:w-12 md:h-12 ">
+
+                    </div>
+
+                </div>
+                
+            </header>
+
+            <!-- Main content here -->
+            <div class="p-4 ">
+
+                <!--Dashboard-->
+                <div class="flex items-center justify-center p-2 ml-2 sm:justify-start max-h-20">
+
+                    <p class="px-2 text-2xl">Στοιχειά ασφαλισμένου - Επεξεργασία</p>
+
+                </div>
+
+                <!--grid: megalo(6 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                <div class="grid grid-cols-1 gap-2 xl:grid-cols-2 xl:gap-4">
+
+
+                    <!-- Prwtos polu megalos pinakas sta aristera -->
+                    <div class="">
+
+                        
+                        <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                        <div class="bg-white border-2 rounded-lg border-custom-new-blue">
+
+                            <!--Pola grid-->
+                            <div class="grid ">
+
+                                <!--To prwto panw blue kouti-->
+                                <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue">
+
+                                    <div class="">
+
+                                        <img src="" alt="">
+
+                                        <p class="text-xl">Προσωπικά Στοιχεία</p>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Fewritika ola ta upoloipa div-->
+                                <div class="">
+
+                                    <div class="p-4 m-4 text-xl bg-teal-100 rounded-lg shadow-lg">
+
+                                        <p class="flex text-left">  
+                                            <span><img src="img/exclamation-circle-solid-svgrepo-com.svg" alt="exclamation-circle-solid" class="w-7 h-7"></span>
+                                            Αν υπάρχουν μεταβολές στα προσωπικά σας 
+                                            στοιχεία παρακαλούμε να ενημερώσετε το Ταμείο.
+                                        </p>
+
+                                    </div>
+
+                                    <!--To prwto eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">ΑΜ Ασφαλισμένου:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- ΑΜ Ασφαλισμένου (AM Insured)-->
+                                                <div class="">
+                                                    <label for="am_insured" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="am_insured" name="am_insured" placeholder="ΑΜ Ασφαλισμένου" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To prwto eswteriko grid-->
+
+                                    <!--To deutero eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Ημερομηνία Εγγραφής:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Ημερομηνία Εγγραφής (ΗΗ-ΜΜ-ΕΕΕΕ) (Registration date) -->
+                                                <div class="">
+                                                    <label for="registration_date" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="date" id="registration_date" name="registration_date"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To deutero eswteriko grid-->
+                                  
+                                    <!--To trito eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Ημερομηνία Διαγραφής:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Ημερομηνία Διαγραφής (ΗΗ-ΜΜ-ΕΕΕΕ) (Deleting date) -->
+                                                <div class="">
+                                                    <label for="deleting_date" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="date" id="deleting_date" name="deleting_date"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To trito eswteriko grid-->
+
+                                                                      
+                                    <!--To tetarto eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Κωδικος Μισθοδοσίας:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Κωδικος Μισθοδοσίας (Payroll Code)-->
+                                                <div class="">
+                                                    <label for="payroll_code" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="payroll_code" name="payroll_code" placeholder="Κωδικος Μισθοδοσίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To tetarto eswteriko grid-->
+
+                                    <!--To pempto eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Επώνυμο:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Last Name -->
+                                                <div class="">
+                                                    <label for="last_name" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="last_name" name="last_name" placeholder="Επώνυμο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To pempto eswteriko grid-->
+
+                                    
+                                    <!--To ekto eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Όνομα:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- First Name -->
+                                                <div class="">
+                                                    <label for="first_name" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="first_name" name="first_name" placeholder="Όνομα" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To ekto eswteriko grid-->
+
+                                    <!--To ebdomo eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Πατρώνυμο:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- ΠΑΤΡΩΝΥΜΟ  (Father's name) -->
+                                                <div class="">
+                                                    <label for="patronymic" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="patronymic" name="patronymic" placeholder="Πατρώνυμο" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To ebdomo eswteriko grid-->
+
+                                    
+                                    <!--To oxdo eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Ημερομηνία Γέννησης:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Ημερομηνία Γέννησης (ΗΗ-ΜΜ-ΕΕΕΕ) (Birth Date) -->
+                                                <div class="">
+                                                    <label for="birth_date" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="date" id="birth_date" name="birth_date"  class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To oxdo eswteriko grid-->
+
+                                    
+                                    <!--To enato eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Φύλο:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Select Dropdown -->
+                                                <div class="">
+                                                    <label for="select_Sex" class="block text-sm font-medium text-gray-700"></label>
+                                                    <select id="select_Sex" name="select_Sex" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 ">
+                                                        <option value="select_Sex_option1">Άνδρας</option>
+                                                        <option value="select_Sex_option2">Γυναίκα</option>
+                                                        <option value="select_Sex_option3" selected>Άλλο</option>
+                                                    </select>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To enato eswteriko grid-->
+
+                                    
+                                    <!--To dekato eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Α.Φ.Μ:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- ΑΦΜ (afm) -->
+                                                <div class="">
+                                                    <label for="number_afm" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="number_afm" name="number_afm" placeholder="Α.Φ.Μ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To dekato eswteriko grid-->
+
+                                    <!--To endekath eswteriko grid-->
+                                    <div class="grid grid-cols-3 p-2">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-lg">Α.Μ.Κ.Α:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Α.Μ.Κ.Α  -->
+                                                <div class="">
+                                                    <label for="number_amka" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="number_amka" name="number_amka" placeholder="Α.Μ.Κ.Α" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To endekath eswteriko grid-->
+
+                                </div>
+                                <!--Telos Fewritika ola ta upoloipa div-->
+
+                            </div>
+                            <!--Telos Pola grid-->
+
+                        </div>
+                        <!--Telos Eswteriko-->
+                        
+   
+                    </div>
+                    <!--Telos Prwtos polu megalos pinakas sta aristera -->
+
+
+                    <!--To dejio megalo kouti me ola-->
+                    <div class="xl:col-start-2 xl:col-end-3">
+                        <!--Prwtos mesaiws pinaka sta dejia-->
+                        <div class="pb-2 xl:pb-4">
+                            
+                            <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                            <div class="bg-white border-2 rounded-lg border-custom-new-blue">
+
+                                <!--Pola grid-->
+                                <div class="grid ">
+
+                                    <!--To prwto panw blue kouti-->
+                                    <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue ">
+
+                                        <div class="">
+
+                                            <img src="" alt="">
+
+                                            <p class="text-xl">Επικοινωνία</p>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!--Fewritika ola ta upoloipa div-->
+                                    <div class="">
+
+                                        <!--To prwto eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">E-mail:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+                        
+                                                    <!-- E-mail -->
+                                                    <div class="">
+                                                        <label for="email_1" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="email" id="email_1" name="email_1" placeholder="E-mail" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To prwto eswteriko grid-->
+
+                                        <!--To deutero eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Κινητό:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+
+                                                    <!-- Κινητό (Mobile) -->
+                                                    <div class="">
+                                                        <label for="Mobile" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="tel" id="Mobile" name="Mobile" placeholder="Κινητό" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To deutero eswteriko grid-->
+                                        
+                                        <!--To trito eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Σταθερό:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+
+                                                    <!-- Τηλέφωνο Οικίας (Home telephone) -->
+                                                    <div class="">
+                                                        <label for="home_telephone" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="tel" id="home_telephone" name="home_telephone" placeholder="Τηλέφωνο Οικίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To trito eswteriko grid--> 
+
+                                    </div>
+                                    <!--Telos Fewritika ola ta upoloipa div-->
+
+                                </div>
+                                <!--Telos Pola grid-->
+
+                            </div>
+                            <!--Telos Eswteriko-->                       
+                            
+                        <!--Telos Prwtos mesaiws pinaka sta dejia-->
+                        </div>
+
+
+                        <!--Prwtos megalos pinaka sta dejia-->
+                        <div class="pb-2 xl:pb-4">
+
+                            <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                            <div class="bg-white border-2 rounded-lg border-custom-new-blue">
+
+                                <!--Pola grid-->
+                                <div class="grid ">
+
+                                    <!--To prwto panw blue kouti-->
+                                    <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue">
+
+                                        <div class="">
+
+                                            <img src="" alt="">
+
+                                            <p class="text-xl">Διεύθυνση</p>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!--Fewritika ola ta upoloipa div-->
+                                    <div class="">
+
+                                        <!--To prwto eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Οδός:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+                        
+                                                    <!-- Διεύθυνση διαμονής Οδός (Residential address Street) -->
+                                                    <div class="">
+                                                        <label for="residential_address_street" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="text" id="residential_address_street" name="residential_address_street" placeholder="Οδός" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To prwto eswteriko grid-->
+
+                                        <!--To deutero eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Πόλη:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+                
+                                                    <!-- Διεύθυνση διαμονής Πόλη (Residential address City) -->
+                                                    <div class="">
+                                                        <label for="residential_address_City" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="text" id="residential_address_City" name="residential_address_City"  placeholder="Πόλη" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To deutero eswteriko grid-->
+                                        
+                                        <!--To trito eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Τ.Κ:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+
+                                                    <!-- Διεύθυνση διαμονής Τ.Κ (Residential address P.O)-->
+                                                    <div class="">
+                                                        <label for="residential_address_P.O" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="text" id="residential_address_P.O" name="residential_address_P.O" placeholder="Τ.Κ" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To trito eswteriko grid--> 
+
+                                                                            
+                                        <!--To tetarto eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Νομός:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+                    
+                                                    <!-- Διεύθυνση διαμονής Νομός (Residence address Prefecture) -->
+                                                    <div class="">
+                                                        <label for="residence_address_Prefecture" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="text" id="residence_address_Prefecture" name="residence_address_Prefecture" placeholder="Νομός" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To tetarto eswteriko grid--> 
+
+                                    </div>
+                                    <!--Telos Fewritika ola ta upoloipa div-->
+
+                                </div>
+                                <!--Telos Pola grid-->
+
+                            </div>
+                            <!--Telos Eswteriko-->  
+                            
+                        <!--Telos Prwtos megalos pinaka sta dejia-->            
+                        </div>
+
+                        <!-- Prwtos mikros pinaka sta dejia -->
+                        <div class="pb-2 xl:pb-4">
+
+                        <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                            <div class="bg-white border-2 rounded-lg border-custom-new-blue">
+
+                                <!--Pola grid-->
+                                <div class="grid ">
+
+                                    <!--To prwto panw blue kouti-->
+                                    <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue">
+
+                                        <div class="">
+
+                                            <img src="" alt="">
+
+                                            <p class="text-xl">Λοιπά στοιχεία </p>
+
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!--Fewritika ola ta upoloipa div-->
+                                    <div class="">
+
+                                        <!--To prwto eswteriko grid-->
+                                        <div class="grid grid-cols-3 p-2">
+
+                                            <!--Onoma stoixeiou-->
+                                            <div class="flex items-center justify-start col-span-1">
+
+                                                <p class="px-2 text-lg">Νομός Υπηρεσίας:</p>
+
+                                            </div>
+                                            
+                                            <!--Forma gia allagh-->
+                                            <div class="col-span-2">
+
+                                                <form action="/sendData" method="POST">
+                        
+                                                    <!-- Νομός Υπηρεσίας(State of Service) -->
+                                                    <div class="">
+                                                        <label for="state_service" class="block text-sm font-medium text-gray-700"></label>
+                                                        <input type="text" id="state_service" name="state_service" placeholder="Νομός Υπηρεσίας" class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                    </div>
+
+                                                </form>
+
+                                            </div>
+
+                                        </div>
+                                        <!--Telos To prwto eswteriko grid-->
+                                    
+                                    </div>
+                                    <!--Telos Fewritika ola ta upoloipa div-->
+
+                                </div>
+                                <!--Telos Pola grid-->
+
+                            </div>
+                            <!--Telos Eswteriko-->  
+                        
+                        <!--Telos Prwtos mikros pinaka sta dejia -->
+                        </div>
+
+                    <!--Telos dejio megalo kouti -->
+                    </div>
+                    
+                
+                <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                </div>
+     
+            <!--Telos to ej.kouti-->
+            </div>
+
+            
+            <!-- Footer -->
+            <footer class="w-full p-1 bg-white xl:p-2 max-h-28 ">
+                <!-- Footer content here -->
+                                     
+                <div class="flex-col justify-center text-center">
+
+                    <p class="p-1 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                    <p class="p-1 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                    
+                </div>
+
+            </footer>
+        </main>
+
+        
+    </div>
+
+
+    <!-- Add any external JavaScript libraries here -->
+</body>
+</html>
