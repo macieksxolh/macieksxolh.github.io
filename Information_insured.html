@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Στοιχειά ασφαλισμένου</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="grid grid-cols-5 font-sans bg-gray-200">
+
+    <!--TO 1/5 ths ofonhs to sidebar-->
+    <aside class="hidden min-h-screen col-start-1 col-end-2 text-white sm:block bg-custom-new-blue element" id="element1">
+        <!-- Sidebar content here -->
+
+        <!-- Fixed Content (remains visible while scrolling) -->
+        <div class="fixed top-0 w-1/5 bg-custom-new-blue element" id="element2">
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Portal Ασφαλισμένου</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg ">
+                <!-- Menu Items -->
+                
+                <li class=" hover:bg-blue-300">
+                    <a href="index.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Στοιχεία Ασφαλισμένου</span>
+                        </div>
+                    </a> 
+                </li>              
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Εισφορές</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Ατομικός λογαριασμός</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Έγγραφα</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members.html" class="flex items-center px-4 py-2">
+                        
+                        <i class="fa fa-users text-slate-300 group-hover:text-white"
+                            aria-hidden="true"></i>
+                        <span class="">Ασφαλισμένοι</span>
+                            
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users.html" class="flex items-center px-4 py-2">
+                        <div class="items-center">
+                            <i class="fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Χρήστες</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ιστορικό Ενεργειών</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+            </div>
+            
+        </div>
+          
+    </aside>
+
+    <!--Responsive Design-->
+    <!-- Sidebar Menu 2 -->
+    <aside id="menu" class="fixed top-0 z-20 w-64 h-full overflow-y-auto transition-transform duration-300 ease-in-out transform element -left-64 sm:hidden" >
+    <div id="element30">
+        <!-- Sidebar content here -->
+        <div class="p-4 element"  id="element31">
+            <button id="close-menu" class="absolute text-xl top-4 right-4 hover:text-gray-800 focus:outline-none">
+                &times;
+            </button>
+          
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white text-end fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Portal Ασφαλισμένου</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                
+
+                <li class=" hover:bg-blue-300">
+                    <a href="index.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured.html" class="flex items-center px-4 py-2">
+                        <div class="items-center "></div>
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Στοιχεία Ασφαλισμένου</span>
+                        <div class="items-center "></div>
+                    </a> 
+                </li>               
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Εισφορές</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Ατομικός λογαριασμός</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Έγγραφα</span>
+                        </div>    
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ασφαλισμένοι</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Χρήστες</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ιστορικό Ενεργειών</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+            </div>
+
+        </div>
+    </div>
+    </aside>
+
+    <!--Ta 4/5 to kurio periexomeno-->
+    <main class="flex flex-col min-h-screen col-start-1 col-end-6 sm:col-start-2 sm:col-end-6">
+
+        <!-- Header -->
+
+        <header class="fixed top-0 grid items-center justify-between w-full grid-cols-5 p-2 bg-white max-h-20">
+
+            <div class="col-start-1 col-end-2 sm:hidden">
+                <!-- Menu Toggle Button -->
+                <button id="menu-toggle" class="fixed top-0 left-0 z-50 m-4 text-2xl focus:outline-none">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+            </div>
+
+            <p class="col-start-2 col-end-3 p-1 text-sm sm:col-start-1 sm:col-end-2 sm:p-2 sm:text-lg md:text-2xl">ΤΕΑΑΠΛ</p>
+
+            <div class="flex items-center justify-start col-start-3 col-end-6 p-2 sm:justify-end sm:col-start-3 sm:col-end-5 2xl:justify-start 2xl:col-start-4 2xl:col-end-6">
+
+                <img src="img/flag-for-greece-svgrepo-com.svg" alt="flag-for-greece" class="w-6 h-6 md:p-2 md:w-12 md:h-12">
+
+                <div class="flex items-center p-1 border-l sm:p-2">
+                    
+                    <p class="p-1 text-sm sm:p-2 lg:text-base">Όνομα Ασφαλισμένου</p>
+
+                    <i class="fa-solid fa-circle-user fa-2x"></i>
+
+                </div>
+
+            </div>
+            
+        </header>
+
+        <div class="p-4 my-20">
+        <!-- Main content here -->
+            
+            <!--Member Information-->
+            <div class="flex items-center justify-center py-2 m-2 md:m-0 sm:justify-start max-h-20">
+
+                <i class="fa-solid fa-user fa-2x"></i>
+
+                <p class="px-2 text-base md:text-xl xl:text-2xl">Στοιχειά ασφαλισμένου - Επεξεργασία</p>
+
+            </div>
+
+            <div class="py-2 m-4 md:m-0 ">
+
+                <div class="flex p-4 text-xl text-left rounded-lg shadow-lg md:w-full bg-color-inf">
+                    
+                    <img src="img/exclamation-circle-solid-svgrepo-com.svg" alt="exclamation-circle-solid" class="mx-1 w-7 h-7">
+
+                    <p class="text-xs sm:text-sm xl:text-base">
+                    Συμπληρώστε τα σωστά στοιχεία και εν συνεχεία πατήστε
+                    <span class="px-1 font-semibold md:px-2 ">Aποθήκευση.</span></p>
+                   
+                </div>
+
+            </div>
+
+            <div class="flex items-center justify-center py-2 m-4 md:justify-start max-h-20 md:m-0">
+
+                <button class="">
+                    <div class="px-2 py-2 text-sm text-gray-200 bg-red-600 rounded-lg shadow-lg md:text-base md:px-4">
+                        <p>Άκυρο</p>
+                    </div>
+                </button>
+
+                <button class="">
+                    <div class="px-2 py-2 ml-2 text-sm text-gray-200 bg-green-500 rounded-lg shadow-lg md:px-4 md:text-base">
+                        <p>Aποθήκευση</p>
+                    </div>
+                </button>
+
+            </div>
+
+            <!--grid: megalo(6 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+            <div class="grid grid-cols-1 gap-2 xl:grid-cols-2 xl:gap-4">
+
+
+                <!-- Prwtos polu megalos pinakas sta aristera -->
+                <div class="">
+
+                    
+                    <!--Eswteriko -->
+                    <div class="bg-white border-2 rounded-lg border-custom-new-blue element_border"  >
+
+                        <!--Pola grid-->
+                        <div class="grid ">
+
+                            <!--To prwto panw blue kouti-->
+                            <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue element element_border" id="element3">
+
+                                <div class="flex">
+
+                                    <i class="mr-2 text-2xl fa fa-male" aria-hidden="true"></i>
+
+                                    <p class="text-xl">Προσωπικά Στοιχεία</p>
+
+                                </div>
+                                
+                            </div>
+
+                            <!--Fewritika ola ta upoloipa div-->
+                            <div class="">
+
+
+
+                                <div class="flex p-4 m-4 text-xl text-left rounded-lg shadow-lg bg-color-inf">
+
+                                    <img src="img/exclamation-circle-solid-svgrepo-com.svg" alt="exclamation-circle-solid" class="mx-1 w-7 h-7">
+
+                                    <p class="text-xs sm:text-sm xl:text-base ">  
+                                        Αν υπάρχουν μεταβολές στα προσωπικά σας 
+                                        στοιχεία παρακαλούμε να ενημερώσετε το Ταμείο.
+                                    </p>
+
+                                </div>
+
+                                <!--To prwto eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">ΑΜ Ασφαλισμένου:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- ΑΜ Ασφαλισμένου (AM Insured)-->
+                                            <div class="">
+                                                <label for="am_insured" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="am_insured" name="am_insured" placeholder="ΑΜ Ασφαλισμένου"
+                                                 class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div> <!--text-sm sm:text-lg-->
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To prwto eswteriko grid-->
+
+                                <!--To deutero eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Ημερομηνία Εγγραφής:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Ημερομηνία Εγγραφής (ΗΗ-ΜΜ-ΕΕΕΕ) (Registration date) -->
+                                            <div class="">
+                                                <label for="registration_date" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="date" id="registration_date" name="registration_date"  placeholder="ΗΗ/ΜΜ/ΕΕΕΕ"
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To deutero eswteriko grid-->
+                              
+                                <!--To trito eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Ημερομηνία Διαγραφής:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Ημερομηνία Διαγραφής (ΗΗ-ΜΜ-ΕΕΕΕ) (Deleting date) -->
+                                            <div class="">
+                                                <label for="deleting_date" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="date" id="deleting_date" name="deleting_date" placeholder="ΗΗ/ΜΜ/ΕΕΕΕ"
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To trito eswteriko grid-->
+
+                                                                  
+                                <!--To tetarto eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Κωδικος Μισθοδοσίας:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Κωδικος Μισθοδοσίας (Payroll Code)-->
+                                            <div class="">
+                                                <label for="payroll_code" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="payroll_code" name="payroll_code" placeholder="Κωδικος Μισθοδοσίας"
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To tetarto eswteriko grid-->
+
+                                <!--To pempto eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Επώνυμο:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Last Name -->
+                                            <div class="">
+                                                <label for="last_name" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="last_name" name="last_name" placeholder="Επώνυμο"
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To pempto eswteriko grid-->
+
+                                
+                                <!--To ekto eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Όνομα:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- First Name -->
+                                            <div class="">
+                                                <label for="first_name" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="first_name" name="first_name" placeholder="Όνομα"
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To ekto eswteriko grid-->
+
+                                <!--To ebdomo eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Πατρώνυμο:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- ΠΑΤΡΩΝΥΜΟ  (Father's name) -->
+                                            <div class="">
+                                                <label for="patronymic" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="patronymic" name="patronymic" placeholder="Πατρώνυμο" 
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To ebdomo eswteriko grid-->
+
+                                
+                                <!--To oxdo eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Ημερομηνία Γέννησης:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Ημερομηνία Γέννησης (ΗΗ-ΜΜ-ΕΕΕΕ) (Birth Date) -->
+                                            <div class="">
+                                                <label for="birth_date" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="date" id="birth_date" name="birth_date" placeholder="ΗΗ/ΜΜ/ΕΕΕΕ"
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To oxdo eswteriko grid-->
+
+                                
+                                <!--To enato eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Φύλο:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Select Dropdown -->
+                                            <div class="">
+                                                <label for="select_Sex" class="block text-sm font-medium text-gray-700"></label>
+                                                <select id="select_Sex" name="select_Sex" class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 ">
+                                                    <option value="select_Sex_option1">Άνδρας</option>
+                                                    <option value="select_Sex_option2">Γυναίκα</option>
+                                                    <option value="select_Sex_option3" selected>Άλλο</option>
+                                                </select>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To enato eswteriko grid-->
+
+                                
+                                <!--To dekato eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Α.Φ.Μ:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- ΑΦΜ (afm) -->
+                                            <div class="">
+                                                <label for="number_afm" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="number_afm" name="number_afm" placeholder="Α.Φ.Μ" 
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To dekato eswteriko grid-->
+
+                                <!--To endekath eswteriko grid-->
+                                <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                    <!--Onoma stoixeiou-->
+                                    <div class="flex items-center justify-start col-span-1">
+
+                                        <p class="px-2 text-sm sm:text-lg">Α.Μ.Κ.Α:</p>
+
+                                    </div>
+                                    
+                                    <!--Forma gia allagh-->
+                                    <div class="col-span-1 sm:col-span-2">
+
+                                        <form action="/sendData" method="POST">
+
+                                            <!-- Α.Μ.Κ.Α  -->
+                                            <div class="">
+                                                <label for="number_amka" class="block text-sm font-medium text-gray-700"></label>
+                                                <input type="text" id="number_amka" name="number_amka" placeholder="Α.Μ.Κ.Α" 
+                                                class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                                <!--Telos To endekath eswteriko grid-->
+
+                            </div>
+                            <!--Telos Fewritika ola ta upoloipa div-->
+
+                        </div>
+                        <!--Telos Pola grid-->
+
+                    </div>
+                    <!--Telos Eswteriko-->
+                    
+
+                </div>
+                <!--Telos Prwtos polu megalos pinakas sta aristera -->
+
+
+                <!--To dejio megalo kouti me ola-->
+                <div class="xl:col-start-2 xl:col-end-3">
+                    <!--Prwtos mesaiws pinaka sta dejia-->
+                    <div class="pb-2 xl:pb-4">
+                        
+                        <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                        <div class="bg-white border-2 rounded-lg border-custom-new-blue element_border" >
+
+                            <!--Pola grid-->
+                            <div class="grid ">
+
+                                <!--To prwto panw blue kouti-->
+                                <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue element element_border"  id="element4">
+
+                                    <div class="flex items-center">
+
+                                        <i class="mr-2 fa fa-envelope" aria-hidden="true"></i>
+
+                                        <p class="text-xl">Επικοινωνία</p>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Fewritika ola ta upoloipa div-->
+                                <div class="">
+
+                                    <!--To prwto eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">E-mail:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+                    
+                                                <!-- E-mail -->
+                                                <div class="">
+                                                    <label for="email_1" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="email" id="email_1" name="email_1" placeholder="E-mail"
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To prwto eswteriko grid-->
+
+                                    <!--To deutero eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Κινητό:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Κινητό (Mobile) -->
+                                                <div class="">
+                                                    <label for="Mobile" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="tel" id="Mobile" name="Mobile" placeholder="Κινητό" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To deutero eswteriko grid-->
+                                    
+                                    <!--To trito eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Σταθερό:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Τηλέφωνο Οικίας (Home telephone) -->
+                                                <div class="">
+                                                    <label for="home_telephone" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="tel" id="home_telephone" name="home_telephone" placeholder="Σταθερό" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To trito eswteriko grid--> 
+
+                                </div>
+                                <!--Telos Fewritika ola ta upoloipa div-->
+
+                            </div>
+                            <!--Telos Pola grid-->
+
+                        </div>
+                        <!--Telos Eswteriko-->                       
+                        
+                    <!--Telos Prwtos mesaiws pinaka sta dejia-->
+                    </div>
+
+
+                    <!--Prwtos megalos pinaka sta dejia-->
+                    <div class="pb-2 xl:pb-4">
+
+                        <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                        <div class="bg-white border-2 rounded-lg border-custom-new-blue element_border"  >
+
+                            <!--Pola grid-->
+                            <div class="grid ">
+
+                                <!--To prwto panw blue kouti-->
+                                <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue element element_border"  id="element5">
+
+                                    <div class="flex items-center">
+
+                                        <i class="mr-2 fa fa-building fa-solid" aria-hidden="true" ></i>
+
+                                        <p class="text-xl">Διεύθυνση</p>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Fewritika ola ta upoloipa div-->
+                                <div class="">
+
+                                    <!--To prwto eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Οδός:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+                    
+                                                <!-- Διεύθυνση διαμονής Οδός (Residential address Street) -->
+                                                <div class="">
+                                                    <label for="residential_address_street" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="residential_address_street" name="residential_address_street" placeholder="Οδός" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To prwto eswteriko grid-->
+
+                                    <!--To deutero eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Πόλη:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+            
+                                                <!-- Διεύθυνση διαμονής Πόλη (Residential address City) -->
+                                                <div class="">
+                                                    <label for="residential_address_City" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="residential_address_City" name="residential_address_City"  placeholder="Πόλη" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To deutero eswteriko grid-->
+                                    
+                                    <!--To trito eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Τ.Κ:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+
+                                                <!-- Διεύθυνση διαμονής Τ.Κ (Residential address P.O)-->
+                                                <div class="">
+                                                    <label for="residential_address_P.O" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="residential_address_P.O" name="residential_address_P.O" placeholder="Τ.Κ" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To trito eswteriko grid--> 
+
+                                                                        
+                                    <!--To tetarto eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Νομός:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+                
+                                                <!-- Διεύθυνση διαμονής Νομός (Residence address Prefecture) -->
+                                                <div class="">
+                                                    <label for="residence_address_Prefecture" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="residence_address_Prefecture" name="residence_address_Prefecture" placeholder="Νομός" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To tetarto eswteriko grid--> 
+
+                                </div>
+                                <!--Telos Fewritika ola ta upoloipa div-->
+
+                            </div>
+                            <!--Telos Pola grid-->
+
+                        </div>
+                        <!--Telos Eswteriko-->  
+                        
+                    <!--Telos Prwtos megalos pinaka sta dejia-->            
+                    </div>
+
+                    <!-- Prwtos mikros pinaka sta dejia -->
+                    <div class="pb-2 xl:pb-4">
+
+                    <!--Eswteriko <div class="p-1 overflow-y-auto h-5/6">-->
+                        <div class="bg-white border-2 rounded-lg border-custom-new-blue element_border" >
+
+                            <!--Pola grid-->
+                            <div class="grid ">
+
+                                <!--To prwto panw blue kouti-->
+                                <div class="p-4 text-white border-2 rounded-sm shadow-lg border-custom-new-blue bg-custom-new-blue element element_border"  id="element6">
+
+                                    <div class="flex items-center">
+
+                                        <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+
+                                        <p class="px-2 text-xl">Λοιπά στοιχεία </p>
+
+                                    </div>
+                                    
+                                </div>
+
+                                <!--Fewritika ola ta upoloipa div-->
+                                <div class="">
+
+                                    <!--To prwto eswteriko grid-->
+                                    <div class="grid grid-cols-2 p-2 sm:grid-cols-3">
+
+                                        <!--Onoma stoixeiou-->
+                                        <div class="flex items-center justify-start col-span-1">
+
+                                            <p class="px-2 text-sm sm:text-lg">Νομός Υπηρεσίας:</p>
+
+                                        </div>
+                                        
+                                        <!--Forma gia allagh-->
+                                        <div class="col-span-1 sm:col-span-2">
+
+                                            <form action="/sendData" method="POST">
+                    
+                                                <!-- Νομός Υπηρεσίας(State of Service) -->
+                                                <div class="">
+                                                    <label for="state_service" class="block text-sm font-medium text-gray-700"></label>
+                                                    <input type="text" id="state_service" name="state_service" placeholder="Νομός Υπηρεσίας" 
+                                                    class="block w-full px-4 py-2 text-sm border border-gray-300 rounded-md sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+                                    <!--Telos To prwto eswteriko grid-->
+                                
+                                </div>
+                                <!--Telos Fewritika ola ta upoloipa div-->
+
+                            </div>
+                            <!--Telos Pola grid-->
+
+                        </div>
+                        <!--Telos Eswteriko-->  
+                    
+                    <!--Telos Prwtos mikros pinaka sta dejia -->
+                    </div>
+
+                <!--Telos dejio megalo kouti -->
+                </div>
+                
+            
+            <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+            </div>
+ 
+        <!--Telos to ej.kouti-->
+        </div>
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="p-1 bg-white xl:p-2 max-h-28">
+            <!-- Footer content here -->
+                                    
+            <div class="flex-col justify-center text-center">
+
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script>
+        function calculateHSL(hexColor) {
+            hexColor = hexColor.replace('#', '');
+            const r = parseInt(hexColor.slice(0, 2), 16) / 255;
+            const g = parseInt(hexColor.slice(2, 4), 16) / 255;
+            const b = parseInt(hexColor.slice(4, 6), 16) / 255;
+            const max = Math.max(r, g, b);
+            const min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max === min) {
+                h = s = 0;
+            } else {
+                const d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                        break;
+                }
+                h /= 6;
+            }
+            
+            return [h * 360, s * 100, l * 100];
+        }
+
+        function updateTextColor(elementId, hexColor) {
+            const element = document.getElementById(elementId);
+            const hslValues = calculateHSL(hexColor);
+            const lightness = hslValues[2];
+            const saturation = hslValues[1];
+            
+            if ((lightness > 65) || (lightness >= 50 && saturation > 65)) {
+                element.style.color = 'black';
+            } else {
+                element.style.color = 'white';
+            }
+        }
+
+        const colorPickers = document.querySelectorAll('.color-picker');
+        const elements = document.querySelectorAll('.element');
+        const elements_border = document.querySelectorAll('.element_border');
+
+        // Add an event listener to each color picker input
+        colorPickers.forEach(colorPicker => {
+            colorPicker.addEventListener('input', function () {
+                const selectedColor = colorPicker.value;
+
+                // Set the background color for all elements
+                elements.forEach(element => {
+                    element.style.backgroundColor = selectedColor;
+                    
+                });
+
+
+                // Set the borderColor color for all elements
+                elements_border.forEach(element => {
+                element.style.borderColor = selectedColor;    
+                });
+
+
+                // Update text color for all elements
+                elements.forEach(element => {
+                    updateTextColor(element.id, selectedColor);
+                });
+            
+            });
+            
+            // Initial color change when the page loads
+            const initialColor = colorPicker.value;
+            elements.forEach(element => {
+                element.style.backgroundColor = initialColor;
+            });
+            elements.forEach(element => {
+                updateTextColor(element.id, initialColor);
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const main = document.querySelector('main');
+            const footer = document.getElementById('sticky-footer');
+            
+            // Function to adjust footer position
+            const adjustFooter = () => {
+                const windowHeight = window.innerHeight;
+                const mainHeight = main.clientHeight;
+
+                if (mainHeight <= windowHeight) {
+                    // Add Tailwind CSS classes for sticky footer
+                    footer.classList.remove('static');
+                    footer.classList.add('fixed', 'bottom-0', 'w-full');
+                } else {
+                    // Remove sticky classes
+                    footer.classList.remove('fixed', 'bottom-0', 'w-full');
+                    footer.classList.add('static');
+                }
+            };
+
+            // Call the function initially and on window resize
+            adjustFooter();
+            window.addEventListener('resize', adjustFooter);
+        });
+    </script>
+    
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('-left-64');
+            menu.classList.add('left-0');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('left-0');
+            menu.classList.add('-left-64');
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#from,#to", {
+            dateFormat: "d/m/Y", // Customize the date format as ΗΗ/ΜΜ/ΕΕΕΕ
+            allowInput: true, // Allow manual input
+            locale: {
+                firstDayOfWeek: 1, // Monday as the first day of the week
+                weekdays: {
+                    shorthand: ["Κυρ", "Δευ", "Τρι", "Τετ", "Πεμ", "Παρ", "Σαβ"],
+                    longhand: [
+                        "Κυριακή",
+                        "Δευτέρα",
+                        "Τρίτη",
+                        "Τετάρτη",
+                        "Πέμπτη",
+                        "Παρασκευή",
+                        "Σάββατο",
+                    ],
+                },
+                months: {
+                    shorthand: [
+                        "Ιαν",
+                        "Φεβ",
+                        "Μάρ",
+                        "Απρ",
+                        "Μάι",
+                        "Ιούν",
+                        "Ιούλ",
+                        "Αυγ",
+                        "Σεπ",
+                        "Οκτ",
+                        "Νοέ",
+                        "Δεκ",
+                    ],
+                    longhand: [
+                        "Ιανουάριος",
+                        "Φεβρουάριος",
+                        "Μάρτιος",
+                        "Απρίλιος",
+                        "Μάιος",
+                        "Ιούνιος",
+                        "Ιούλιος",
+                        "Αύγουστος",
+                        "Σεπτέμβριος",
+                        "Οκτώβριος",
+                        "Νοέμβριος",
+                        "Δεκέμβριος",
+                    ],
+                },
+            },
+        });
+    </script>
+
+</body>
+</html>
