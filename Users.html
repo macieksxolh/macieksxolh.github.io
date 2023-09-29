@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="grid grid-cols-5 font-sans bg-gray-200">
+
+    <!--TO 1/5 ths ofonhs to sidebar-->
+    <aside class="hidden min-h-screen col-start-1 col-end-2 text-white sm:block bg-custom-new-blue element" id="element1">
+        <!-- Sidebar content here -->
+
+        <!-- Fixed Content (remains visible while scrolling) -->
+        <div class="fixed top-0 w-1/5 bg-custom-new-blue element" id="element2">
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Portal Ασφαλισμένου</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg ">
+                <!-- Menu Items -->
+                
+                <li class=" hover:bg-blue-300">
+                    <a href="index.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Στοιχεία Ασφαλισμένου</span>
+                        </div>
+                    </a> 
+                </li>              
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Εισφορές</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Ατομικός λογαριασμός</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Έγγραφα</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members.html" class="flex items-center px-4 py-2">
+                        
+                        <i class="fa fa-users text-slate-300 group-hover:text-white"
+                            aria-hidden="true"></i>
+                        <span class="">Ασφαλισμένοι</span>
+                            
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users.html" class="flex items-center px-4 py-2">
+                        <div class="items-center">
+                            <i class="fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Χρήστες</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ιστορικό Ενεργειών</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+            </div>
+            
+        </div>
+          
+    </aside>
+
+    <!--Responsive Design-->
+    <!-- Sidebar Menu 2 -->
+    <aside id="menu" class="fixed top-0 z-20 w-64 h-full overflow-y-auto transition-transform duration-300 ease-in-out transform element -left-64 sm:hidden" >
+    <div id="element30">
+        <!-- Sidebar content here -->
+        <div class="p-4 element"  id="element31">
+            <button id="close-menu" class="absolute text-xl top-4 right-4 hover:text-gray-800 focus:outline-none">
+                &times;
+            </button>
+          
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white text-end fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Portal Ασφαλισμένου</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                
+
+                <li class=" hover:bg-blue-300">
+                    <a href="index.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured.html" class="flex items-center px-4 py-2">
+                        <div class="items-center "></div>
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Στοιχεία Ασφαλισμένου</span>
+                        <div class="items-center "></div>
+                    </a> 
+                </li>               
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Εισφορές</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Ατομικός λογαριασμός</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Έγγραφα</span>
+                        </div>    
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ασφαλισμένοι</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Χρήστες</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ιστορικό Ενεργειών</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+            </div>
+
+        </div>
+    </div>
+    </aside>
+
+    <!--Ta 4/5 to kurio periexomeno-->
+    <main class="flex flex-col min-h-screen col-start-1 col-end-6 sm:col-start-2 sm:col-end-6">
+
+        <!-- Header -->
+
+        <header class="fixed top-0 grid items-center justify-between w-full grid-cols-5 p-2 bg-white max-h-20">
+
+            <div class="col-start-1 col-end-2 sm:hidden">
+                <!-- Menu Toggle Button -->
+                <button id="menu-toggle" class="fixed top-0 left-0 z-50 m-4 text-2xl focus:outline-none">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+            </div>
+
+            <p class="col-start-2 col-end-3 p-1 text-sm sm:col-start-1 sm:col-end-2 sm:p-2 sm:text-lg md:text-2xl">ΤΕΑΑΠΛ</p>
+
+            <div class="flex items-center justify-start col-start-3 col-end-6 p-2 sm:justify-end sm:col-start-3 sm:col-end-5 2xl:justify-start 2xl:col-start-4 2xl:col-end-6">
+
+                <img src="img/flag-for-greece-svgrepo-com.svg" alt="flag-for-greece" class="w-6 h-6 md:p-2 md:w-12 md:h-12">
+
+                <div class="flex items-center p-1 border-l sm:p-2">
+                    
+                    <p class="p-1 text-sm sm:p-2 lg:text-base">Όνομα Ασφαλισμένου</p>
+
+                    <i class="fa-solid fa-circle-user fa-2x"></i>
+
+                </div>
+
+            </div>
+            
+        </header>
+
+        <div class="flex flex-col items-center justify-center p-4 my-20 sm:items-start sm:justify-start">
+        <!-- Main content here -->
+            
+            <!--Dashboard-->
+            <div class="flex items-center justify-center p-2 ml-2 sm:justify-start max-h-20">
+
+                <i class=" fa fa-users fa-2x group-hover:text-white" aria-hidden="true"></i>
+
+                <p class="px-2 text-3xl">Χρήστες</p>
+
+            </div>
+
+            
+            <button type="button" 
+                class="px-5 py-3 mb-4 ml-5 text-base font-medium text-white rounded-md w-72 bg-custom-new-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 element" id="element4">
+                <i class="mr-2 fa fa-envelope fa-lg" aria-hidden="true"></i>
+                Ενεργοποίηση Λογαριασμού
+            </button>
+
+            <div class="w-full px-1">
+
+                
+
+                <form class="flex flex-col items-center justify-start space-y-2 sm:space-y-0 sm:flex-row ">
+                    
+                    <!-- From Date Field -->
+                    
+                        
+                        <label for="from" class="block px-2 text-sm font-medium text-gray-700 md:text-base xl:text-lg "></label>
+                        <input type="text" id="from" name="from" placeholder="Όνομα, Επώνυμο, Αρ.Μητρώου, ΑΦΜ, ΑΜΚΑ, ΑΡ.Μισθοδοσίας" 
+                        class="w-full px-4 py-2 text-sm border border-gray-300 rounded-md xl:w-1/2 sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+
+                        <!-- Export Button -->
+                        <button type="button" 
+                            class="w-32 px-5 py-3 ml-2 text-base font-medium text-white rounded-md bg-custom-new-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 element" id="element6">
+                            Αναζήτηση
+                        </button>
+
+                </form>
+                   
+                
+
+            </div>
+
+            
+        <!--Telos to ej.kouti-->
+        </div>
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="p-1 bg-white xl:p-2 max-h-28">
+            <!-- Footer content here -->
+                                    
+            <div class="flex-col justify-center text-center">
+
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script>
+        function calculateHSL(hexColor) {
+            hexColor = hexColor.replace('#', '');
+            const r = parseInt(hexColor.slice(0, 2), 16) / 255;
+            const g = parseInt(hexColor.slice(2, 4), 16) / 255;
+            const b = parseInt(hexColor.slice(4, 6), 16) / 255;
+            const max = Math.max(r, g, b);
+            const min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max === min) {
+                h = s = 0;
+            } else {
+                const d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                        break;
+                }
+                h /= 6;
+            }
+            
+            return [h * 360, s * 100, l * 100];
+        }
+
+        function updateTextColor(elementId, hexColor) {
+            const element = document.getElementById(elementId);
+            const hslValues = calculateHSL(hexColor);
+            const lightness = hslValues[2];
+            const saturation = hslValues[1];
+            
+            if ((lightness > 65) || (lightness >= 50 && saturation > 65)) {
+                element.style.color = 'black';
+            } else {
+                element.style.color = 'white';
+            }
+        }
+
+        const colorPickers = document.querySelectorAll('.color-picker');
+        const elements = document.querySelectorAll('.element');
+        const elements_border = document.querySelectorAll('.element_border');
+
+        // Add an event listener to each color picker input
+        colorPickers.forEach(colorPicker => {
+            colorPicker.addEventListener('input', function () {
+                const selectedColor = colorPicker.value;
+
+                // Set the background color for all elements
+                elements.forEach(element => {
+                    element.style.backgroundColor = selectedColor;
+                    
+                });
+
+
+                // Set the borderColor color for all elements
+                elements_border.forEach(element => {
+                element.style.borderColor = selectedColor;    
+                });
+
+
+                // Update text color for all elements
+                elements.forEach(element => {
+                    updateTextColor(element.id, selectedColor);
+                });
+            
+            });
+            
+            // Initial color change when the page loads
+            const initialColor = colorPicker.value;
+            elements.forEach(element => {
+                element.style.backgroundColor = initialColor;
+            });
+            elements.forEach(element => {
+                updateTextColor(element.id, initialColor);
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const main = document.querySelector('main');
+            const footer = document.getElementById('sticky-footer');
+            
+            // Function to adjust footer position
+            const adjustFooter = () => {
+                const windowHeight = window.innerHeight;
+                const mainHeight = main.clientHeight;
+
+                if (mainHeight <= windowHeight) {
+                    // Add Tailwind CSS classes for sticky footer
+                    footer.classList.remove('static');
+                    footer.classList.add('fixed', 'bottom-0', 'w-full');
+                } else {
+                    // Remove sticky classes
+                    footer.classList.remove('fixed', 'bottom-0', 'w-full');
+                    footer.classList.add('static');
+                }
+            };
+
+            // Call the function initially and on window resize
+            adjustFooter();
+            window.addEventListener('resize', adjustFooter);
+        });
+    </script>
+    
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('-left-64');
+            menu.classList.add('left-0');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('left-0');
+            menu.classList.add('-left-64');
+        });
+    </script>
+
+
+
+</body>
+</html>
