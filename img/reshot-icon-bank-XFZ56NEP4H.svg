@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="100%"
+   height="100%"
+   viewBox="0 0 64 64"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;"
+   id="svg13">
+  <metadata
+   id="metadata19">
+    <rdf:RDF>
+      <cc:Work
+   rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+
+        <dc:type
+   rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+
+      </cc:Work>
+
+    </rdf:RDF>
+
+  </metadata>
+
+  <defs
+   id="defs17" />
+
+  
+  <path
+   d="M57,11c0,-1.061 -0.421,-2.078 -1.172,-2.828c-0.75,-0.751 -1.767,-1.172 -2.828,-1.172l-42,0c-1.061,0 -2.078,0.421 -2.828,1.172c-0.751,0.75 -1.172,1.767 -1.172,2.828l0,42c0,1.061 0.421,2.078 1.172,2.828c0.75,0.751 1.767,1.172 2.828,1.172l42,0c1.061,0 2.078,-0.421 2.828,-1.172c0.751,-0.75 1.172,-1.767 1.172,-2.828l0,-42Z"
+   style="fill:none;stroke:#222a33;stroke-width:2px;"
+   id="path3" />
+
+  <path
+   d="M50,26l0,-8c0,-1.061 -0.421,-2.078 -1.172,-2.828c-0.75,-0.751 -1.767,-1.172 -2.828,-1.172c-6.926,0 -21.074,0 -28,0c-2.209,0 -4,1.791 -4,4l0,28c0,2.209 1.791,4 4,4l28,0c2.209,0 4,-1.791 4,-4c0,-0.307 0,-0.5 0,-0.5"
+   style="fill:none;stroke:#222a33;stroke-width:2px;"
+   id="path5" />
+
+  <path
+   d="M52,28c0,-1.105 -0.895,-2 -2,-2c-1.105,0 -2,0.895 -2,2c0,3.074 0,8.926 0,12c0,1.105 0.895,2 2,2c1.105,0 2,-0.895 2,-2c0,-3.074 0,-8.926 0,-12Z"
+   style="fill:none;stroke:#222a33;stroke-width:2px;"
+   id="path7" />
+
+  <path
+   d="M40,27c0,-1.657 -1.343,-3 -3,-3c-2.859,0 -7.141,0 -10,0c-1.657,0 -3,1.343 -3,3c0,2.02 0,4.728 0,7.051c0,2.953 1.732,5.631 4.425,6.841c1.849,0.832 3.575,1.608 3.575,1.608c0,0 1.726,-0.776 3.575,-1.608c2.693,-1.21 4.425,-3.888 4.425,-6.841l0,-7.051Z"
+   style="fill:none;stroke:#222a33;stroke-width:2px;"
+   id="path9" />
+
+  <path
+   d="M28.75,32.748l2.5,2l4,-3.5"
+   style="fill:none;stroke:#222a33;stroke-width:2px;"
+   id="path11" />
+
+</svg>
