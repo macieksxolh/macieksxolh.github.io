@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="grid grid-cols-5 font-sans bg-gray-200">
+
+    <!--TO 1/5 ths ofonhs to sidebar-->
+    <aside class="hidden min-h-screen col-start-1 col-end-2 text-white sm:block bg-custom-new-blue element" id="element1">
+        <!-- Sidebar content here -->
+
+        <!-- Fixed Content (remains visible while scrolling) -->
+        <div class="fixed top-0 w-1/5 bg-custom-new-blue element" id="element2">
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Portal Ασφαλισμένου</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg ">
+                <!-- Menu Items -->
+                
+                <li class=" hover:bg-blue-300">
+                    <a href="index.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Στοιχεία Ασφαλισμένου</span>
+                        </div>
+                    </a> 
+                </li>              
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Εισφορές</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Ατομικός λογαριασμός</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Έγγραφα</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members.html" class="flex items-center px-4 py-2">
+                        
+                        <i class="fa fa-users text-slate-300 group-hover:text-white"
+                            aria-hidden="true"></i>
+                        <span class="">Ασφαλισμένοι</span>
+                            
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users.html" class="flex items-center px-4 py-2">
+                        <div class="items-center">
+                            <i class="fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Χρήστες</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ιστορικό Ενεργειών</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+                <div id="selected-color" class="px-4 py-2 rounded-lg">Selected Color: #0582ca</div>
+            </div>
+            
+        </div>
+          
+    </aside>
+
+    <!--Responsive Design-->
+    <!-- Sidebar Menu 2 -->
+    <aside id="menu" class="fixed top-0 z-20 w-64 h-full overflow-y-auto transition-transform duration-300 ease-in-out transform element -left-64 sm:hidden" >
+    <div id="element30">
+        <!-- Sidebar content here -->
+        <div class="p-4 element"  id="element31">
+            <button id="close-menu" class="absolute text-xl top-4 right-4 hover:text-gray-800 focus:outline-none">
+                &times;
+            </button>
+          
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white text-end fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Portal Ασφαλισμένου</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                
+
+                <li class=" hover:bg-blue-300">
+                    <a href="index.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured.html" class="flex items-center px-4 py-2">
+                        <div class="items-center "></div>
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Στοιχεία Ασφαλισμένου</span>
+                        <div class="items-center "></div>
+                    </a> 
+                </li>               
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Εισφορές</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Ατομικός λογαριασμός</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Έγγραφα</span>
+                        </div>    
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ΔΙΑΧΕΙΡΙΣΤΗΣ</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ασφαλισμένοι</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Χρήστες</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Ιστορικό Ενεργειών</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+                <div id="selected-color_2" class="px-4 py-2 rounded-lg">Selected Color: #0582ca</div>
+            </div>
+
+        </div>
+    </div>
+    </aside>
+
+    <!--Ta 4/5 to kurio periexomeno-->
+    <main class="flex flex-col min-h-screen col-start-1 col-end-6 sm:col-start-2 sm:col-end-6">
+
+        <!-- Header -->
+
+        <header class="fixed top-0 grid items-center justify-between w-full grid-cols-5 p-2 bg-white max-h-20">
+
+            <div class="col-start-1 col-end-2 sm:hidden">
+                <!-- Menu Toggle Button -->
+                <button id="menu-toggle" class="fixed top-0 left-0 z-50 m-4 text-2xl focus:outline-none">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+            </div>
+
+            <p class="col-start-2 col-end-3 p-1 text-sm sm:col-start-1 sm:col-end-2 sm:p-2 sm:text-lg md:text-2xl">ΤΕΑΑΠΛ</p>
+
+            <div class="flex items-center justify-start col-start-3 col-end-6 p-2 sm:justify-end sm:col-start-3 sm:col-end-5 2xl:justify-start 2xl:col-start-4 2xl:col-end-6">
+
+                <img src="img/flag-for-greece-svgrepo-com.svg" alt="flag-for-greece" class="w-6 h-6 md:p-2 md:w-12 md:h-12">
+
+                <div class="flex items-center p-1 border-l sm:p-2">
+                    
+                    <p class="p-1 text-sm sm:p-2 lg:text-base">Όνομα Ασφαλισμένου</p>
+
+                    <i class="fa-solid fa-circle-user fa-2x"></i>
+
+                </div>
+
+            </div>
+            
+        </header>
+
+        <!--H kentrikh emfanisei tou site se kanonikh ofonh-kinhto -->
+
+        <div class="my-20">
+            <!-- Your page content here -->
+                <!--Dashboard-->
+                <div class="flex items-center justify-center p-2 ml-2 sm:justify-start max-h-20">
+
+                    <i class=" fa-solid fa-piggy-bank fa-2x text-slate-300 group-hover:text-white" 
+                    style="color: #5A5C69;" aria-hidden="true"></i>
+
+                    <!--<img src="img/pig-piggy-bank-svgrepo-com.svg" alt="pig-piggy-bank" class="w-12 h-12 ">-->
+
+                    <p class="px-2 text-3xl">Ατομικός λογαριασμός</p>
+
+                </div>
+
+                <div class="p-2 md:p-5">
+
+                    <h2 class="py-2 text-2xl text-left">Σύνοψη Λογαριασμού</h2>
+
+                    
+                    <!--Emfanisei pinakwn-->
+                    <div class="container p-4 mx-auto">
+                                            
+                        <!-- Button to toggle content -->
+                        <!-- Image to toggle content img/table-alt-svgrepo-com.svg  -->
+                        <img id="toggleImage" src="img/grid-svgrepo-com.svg" alt="Show Content 1" class="w-10 h-10 ml-6 cursor-pointer">
+                
+                        <!-- Content 1 (initially displayed) -->
+                        <div id="content1" class="hidden mt-4 sm:block">
+
+
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full border">
+                                    <thead>
+                                        <tr class="font-sans text-white">
+                                            <th class="p-2 border-b border-r w-68 bg-custom-new-blue element " id="element3">Είδος Λογαριασμού</th>
+                                            <th class="p-2 border-b border-r bg-custom-new-blue element " id="element4" >Επενδυτικό Προϊόν</th>
+                                            <th class="p-2 border-b border-r bg-custom-new-blue element " id="element5">Πλήθος</th>
+                                            <th class="p-2 border-b border-r bg-custom-new-blue element " id="element6">Μονάδα</th>
+                                            <th class="p-2 border-b border-r bg-custom-new-blue element " id="element7" >Αξία Μονάδας</th>
+                                            <th class="p-2 border-b border-r bg-custom-new-blue element " id="element8" >Ημ.Αποτίμησης</th>
+                                            <th class="p-2 border-b border-r bg-custom-new-blue element " id="element9" >Αποτίμηση</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Add your table rows here -->
+                                        <!--Row Start-->
+                                        <tr class="text-right border-gray-400 ">
+                                            <td class="p-2 border-r border-gray-400"> Τακτική Εισφορά Ασφαλισμένου </td>
+                                            <td class="p-2 border-r border-gray-400 ">Ανεπένδυτο ποσό σε Ευρώ</td>
+                                            <td class="p-2 border-r border-gray-400 ">Στοιχεία</td>
+                                            <td class="p-2 border-r border-gray-400 ">Ευρώ</td>
+                                            <td class="p-2 border-r border-gray-400 ">1.000</td>
+                                            <td class="p-2 border-r border-gray-400 ">Στοιχεία</td>
+                                            <td class="p-2 border-r border-gray-400 ">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 1-->
+                                        <tr class="text-right bg-white" >
+                                            <td class="p-2 border-b border-r"> Τακτική Εισφορά Ασφαλισμένου </td>
+                                            <td class="p-2 border-b border-r">Αμοιβαίο Κεφάλαιο</td>
+                                            <td class="p-2 border-b border-r">Στοιχεία</td>
+                                            <td class="p-2 border-b border-r">Μερίδα</td>
+                                            <td class="p-2 border-b border-r">13.2599</td>
+                                            <td class="p-2 border-b border-r">Στοιχεία</td>
+                                            <td class="p-2 border-b border-r ">Στοιχεία</td>
+                                            
+                                            
+                                        </tr>
+                                        <!--Row 2-->
+                                        <tr class="h-10 text-right text-white" >
+                                            <td class="p-2 bg-custom-new-blue element" id="element10"></td>
+                                            <td class="p-2 bg-custom-new-blue element" id="element11"></td>
+                                            <td class="p-2 bg-custom-new-blue element" id="element12"></td>
+                                            <td class="p-2 bg-custom-new-blue element" id="element13"></td>
+                                            <td class="p-2 bg-custom-new-blue element" id="element14"></td>
+                                            <td class="p-2 border-r bg-custom-new-blue element" id="element15">Σύνολο</td>
+                                            <td class="p-2 border-r bg-custom-new-blue element" id="element16">Στοιχεία</td>
+
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+
+                                    
+
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                
+                        <!-- Content 2 (initially hidden) -->
+                        <div id="content2" class="block mt-4 sm:hidden">
+
+
+                            <!--grid: megalo(3 grammes x 4 stoiles), mesaio(4 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                            <div class="grid grid-cols-1 gap-2 p-2 mt-4 md:gap-3 md:grid-cols-2 xl:grid-cols-3 xl:gap-4">
+
+                                <!-- Card 1 -->
+                                <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                    <div class="grid grid-cols-2 gap-2 ">
+                                        <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                        <div>Τακτική Εισφορά Ασφαλισμένου </div>
+                                        <div class="font-semibold">Επενδυτικό Προϊόν:</div>
+                                        <div>Ανεπένδυτο ποσό σε Ευρώ</div>
+                                        <div class="font-semibold">Πλήθος:</div>
+                                        <div>Στοιχεία</div>
+                                        <div class="font-semibold">Μονάδα:</div>
+                                        <div>Ευρώ</div>
+                                        <div class="font-semibold">Αξία Μονάδας:</div>
+                                        <div>1.000</div>
+                                        <div class="font-semibold">Ημ.Αποτίμησης:</div>
+                                        <div>Στοιχεία</div>
+                                        <div class="font-semibold">Αποτίμηση:</div>
+                                        <div>Στοιχεία</div>
+                                    </div>
+                                
+                                </div>
+
+                                <!-- Card 2 -->
+                                <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                    <div class="grid grid-cols-2 gap-2 ">
+                                        <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                        <div>Τακτική Εισφορά Ασφαλισμένου </div>
+                                        <div class="font-semibold">Επενδυτικό Προϊόν:</div>
+                                        <div>Αμοιβαίο Κεφάλαιο</div>
+                                        <div class="font-semibold">Πλήθος:</div>
+                                        <div>Στοιχεία</div>
+                                        <div class="font-semibold">Μονάδα:</div>
+                                        <div>Μερίδα</div>
+                                        <div class="font-semibold">Αξία Μονάδας:</div>
+                                        <div>13.2599</div>
+                                        <div class="font-semibold">Ημ.Αποτίμησης:</div>
+                                        <div>Στοιχεία</div>
+                                        <div class="font-semibold">Αποτίμηση:</div>
+                                        <div>Στοιχεία</div>
+                                    </div>
+                                
+                                </div>
+
+                                <!-- Card 3 -->
+                                <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                    <div class="grid grid-cols-2 gap-2 ">
+                                        <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                        <div></div>
+                                        <div class="font-semibold">Επενδυτικό Προϊόν:</div>
+                                        <div></div>
+                                        <div class="font-semibold">Πλήθος:</div>
+                                        <div></div>
+                                        <div class="font-semibold">Μονάδα:</div>
+                                        <div></div>
+                                        <div class="font-semibold">Αξία Μονάδας:</div>
+                                        <div></div>
+                                        <div class="font-semibold">Ημ.Αποτίμησης:</div>
+                                        <div>Σύνολο</div>
+                                        <div class="font-semibold">Αποτίμηση:</div>
+                                        <div>Στοιχεία</div>
+                                    </div>
+                                
+                                </div>
+
+
+
+                            <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!--Telos Emfanisei pinakwn-->
+
+                </div>
+
+                <h2 class="px-4 text-2xl text-left">Κινήσεις Λογαριασμού</h2>
+
+                
+                <div class="py-4 mx-auto mt-4 ml-2 rounded-lg shadow-lg bg-col-1">
+                    
+                    <form class="flex flex-col items-center space-y-2 sm:space-y-0 sm:flex-row">
+                        <!-- From Date Field -->
+                        <div class="flex items-center mr-1">
+                            <label for="from" class="block px-1 text-sm font-medium text-gray-700 md:text-base xl:text-lg"> Από </label>
+                            <input type="date" id="from" name="from" placeholder="ΗΗ/ΜΜ/ΕΕΕΕ" 
+                            class="px-2 py-2 text-sm border border-gray-300 rounded-md xl:w-32 sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+                        </div>
+            
+                        <!-- To Date Field -->
+                        <div class="flex items-center mr-1">
+                            <label for="to" class="block pr-1 text-sm font-medium text-gray-700 md:text-base xl:text-lg"> Έως </label>
+                            <input type="date" id="to" name="to" placeholder="ΗΗ/ΜΜ/ΕΕΕΕ" 
+                            class="px-2 py-2 text-sm border border-gray-300 rounded-md xl:w-32 sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+                        </div>
+                        
+                        <div class="hidden xl:flex xl:items-center ">
+
+                            <!-- Submit Button -->
+                            <button type="submit" 
+                                class="px-1 py-3 text-base font-medium text-white rounded-md w-36 bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element17">
+                                <span><i class=" fa fa-search group-hover:text-white" aria-hidden="true"></i></span>
+                                Υποβολή
+                            </button>
+
+                            <!-- Extra Button -->
+                            <button type="submit" 
+                                class="w-56 px-5 py-3 ml-2 text-base font-medium text-white rounded-md bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element18">
+                                <i class="fa-solid fa-arrow-up-right-dots"></i>
+                                Επενδυτικό Προϊόν
+                            </button>
+                
+                            <!-- Print Button -->
+                            <button type="button" onclick="window.print()" 
+                                class="px-1 py-3 ml-2 text-base font-medium text-white rounded-md w-36 bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element19">
+                                <span><i class=" fa fa-print group-hover:text-white" aria-hidden="true"></i></span>
+                                Εκτύπωση
+                            </button>
+                
+                            <!-- Export Button -->
+                            <button type="button" 
+                                class="w-32 px-1 py-3 ml-2 text-base font-medium text-white rounded-md bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element20">
+                                <i class="fa-solid fa-file-excel"></i>
+                                Εξαγωγή
+                            </button>
+
+                        </div>
+                        
+                    </form>
+
+                    <form class="flex flex-col items-center justify-start p-4 mt-2 ml-4 space-y-2 xl:hidden sm:justify-normal sm:flex-row sm:space-y-0">
+                                          
+
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                            class="w-56 h-20 px-1 py-3 text-base font-medium text-white rounded-md sm:w-36 lg:h-12 bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element21">
+                            <span><i class=" fa fa-search group-hover:text-white" aria-hidden="true"></i></span>
+                            Υποβολή
+                        </button>
+
+                        <!-- Extra Button -->
+                        <button type="submit" 
+                            class="w-56 h-20 px-1 py-3 text-base font-medium text-white rounded-md sm:w-64 sm:ml-2 lg:h-12 lg:w-56 bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element22">
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+                            Επενδυτικό Προϊόν
+                        </button>
+            
+                        <!-- Print Button -->
+                        <button type="button" onclick="window.print()" 
+                            class="w-56 h-20 px-1 py-3 text-base font-medium text-white rounded-md sm:w-36 lg:h-12 sm:ml-2 bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element23">
+                            <span><i class=" fa fa-print group-hover:text-white" aria-hidden="true"></i></span>
+                            Εκτύπωση
+                        </button>
+            
+                        <!-- Export Button -->
+                        <button type="button" 
+                            class="w-56 h-20 px-1 py-3 text-base font-medium text-white rounded-md sm:w-36 lg:h-12 sm:ml-2 bg-custom-new-blue element hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700" id="element24">
+                            <i class="fa-solid fa-file-excel"></i>
+                            Εξαγωγή
+                        </button>
+
+                        
+                    </form>
+                    
+                </div>
+
+                
+                <!--Emfanisei pinakwn-->
+                <div class="container p-4 mx-auto">
+                                        
+            
+                    <!-- Content 1 (initially displayed) -->
+                    <div id="content3" class="hidden sm:block">
+
+
+                <!--grid: megalo(3 grammes x 4 stoiles), mesaio(4 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                <div class="overflow-x-auto">
+     
+                    <div class="container py-8 mx-auto ">
+
+                        <h2 class="px-5 text-2xl text-left">Ανεπένδυτο ποσό σε Ευρώ</h2>
+                        
+                            <form class="p-0 text-xs sm:p-4 sm:text-sm xl:text-base">
+                                <table class="w-full border border-gray-300 min-w-min">
+                                    <thead>
+                                        <tr class="font-sans text-white">
+                                            <th class="p-2 border-b border-r w-60 bg-custom-new-blue element" id="element25">Ημερομηνία</th>
+                                            <th class="p-2 border-b border-r w-60 bg-custom-new-blue element" id="element26">Είδος Λογαριασμού</th>
+                                            <th class="p-2 border-b border-r w-52 bg-custom-new-blue element" id="element27">Είδος Κίνησης</th>
+                                            <th class="w-40 p-2 border-b border-r bg-custom-new-blue element" id="element28">Περιγραφή</th>
+                                            <th class="w-32 p-2 border-b border-r bg-custom-new-blue element" id="element29">Ευρώ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Add your table rows here -->
+                                        <!--Row Start-->
+                                        <tr class="text-center border-yellow-300 bg-col-2">
+                                            <td class="p-2 text-center border-r border-yellow-300">Προηγούμενο Υπόλοιπο</td>
+                                            <td class="p-2 border-r border-yellow-300">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-yellow-300"></td>
+                                            <td class="p-2 border-r border-yellow-300"></td>
+                                            <td class="p-2 text-right border-r border-yellow-300">0,00</td>
+                                        </tr>
+                                        <!--Row 1-->
+                                        <tr class="text-center bg-white" >
+                                            <td class="p-2 text-center border-b border-r">30/03/2023</td>
+                                            <td class="p-2 border-b border-r">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-b border-r">Εισφορά</td>
+                                            <td class="p-2 border-b border-r">3 - 2023</td>
+                                            <td class="p-2 text-right border-b border-r">Στοιχεία</td>
+                                            
+                                            
+                                        </tr>
+                                        <!--Row 2-->
+                                        <tr class="text-center" >
+                                            <td class="p-2 text-center border-r border-gray-400">01/04/2023</td>
+                                            <td class="p-2 border-r border-gray-400">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-gray-400">Αγορά Μεριδίων</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 text-right border-r border-gray-400">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 3-->
+                                        <tr class="text-center bg-white" >
+                                            <td class="p-2 text-center border-b border-r">27/04/2023</td>
+                                            <td class="p-2 border-b border-r">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-b border-r">Εισφορά</td>
+                                            <td class="p-2 border-b border-r">4 - 2023</td>
+                                            <td class="p-2 text-right border-b border-r">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 4-->
+                                        <tr class="text-center" >
+                                            <td class="p-2 text-center border-r border-gray-400">01/05/2023</td>
+                                            <td class="p-2 border-r border-gray-400">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-gray-400">Αγορά Μεριδίων</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 text-right border-r border-gray-400">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 5-->
+                                        <tr class="text-center bg-white" >
+                                            <td class="p-2 text-center border-b border-r">30/05/2023</td>
+                                            <td class="p-2 border-b border-r">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-b border-r">Εισφορά</td>
+                                            <td class="p-2 border-b border-r">5 - 2023</td>
+                                            <td class="p-2 text-right border-b border-r">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 6-->
+                                        <tr class="text-center" >
+                                            <td class="p-2 text-center border-r border-gray-400">01/06/2023</td>
+                                            <td class="p-2 border-r border-gray-400">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-gray-400">Αγορά Μεριδίων</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 text-right border-r border-gray-400">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 7-->
+                                        <tr class="text-center bg-white" >
+                                            <td class="p-2 text-center border-b border-r">29/06/2023</td>
+                                            <td class="p-2 border-b border-r">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-b border-r">Εισφορά</td>
+                                            <td class="p-2 border-b border-r">6 - 2023</td>
+                                            <td class="p-2 text-right border-b border-r">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 8-->
+                                        <tr class="text-center" >
+                                            <td class="p-2 text-center border-r border-gray-400">01/07/2023</td>
+                                            <td class="p-2 border-r border-gray-400">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-gray-400">Αγορά Μεριδίων</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 text-right border-r border-gray-400">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 9-->
+                                        <tr class="text-center bg-white" >
+                                            <td class="p-2 text-center border-b border-r">28/07/2023</td>
+                                            <td class="p-2 border-b border-r">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-b border-r">Εισφορά</td>
+                                            <td class="p-2 border-b border-r">7 - 2023</td>
+                                            <td class="p-2 text-right border-b border-r">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 10-->
+                                        <tr class="text-center" >
+                                            <td class="p-2 text-center border-r border-gray-400">01/08/2023</td>
+                                            <td class="p-2 border-r border-gray-400">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-gray-400">Αγορά Μεριδίων</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 text-right border-r border-gray-400">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 11-->
+                                        <tr class="text-center bg-white" >
+                                            <td class="p-2 text-center border-b border-r">30/08/2023</td>
+                                            <td class="p-2 border-b border-r">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-b border-r">Εισφορά</td>
+                                            <td class="p-2 border-b border-r">8 - 2023</td>
+                                            <td class="p-2 text-right border-b border-r">Στοιχεία</td>
+
+                                        </tr>
+                                        <!--Row 12-->
+                                        <tr class="text-center border-b border-gray-500" >
+                                            <td class="p-2 text-center border-r border-gray-400">01/09/2023</td>
+                                            <td class="p-2 border-r border-gray-400">Τακτική Εισφορά Ασφαλισμένου</td>
+                                            <td class="p-2 border-r border-gray-400">Αγορά Μεριδίων</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 text-right border-r border-gray-400">Στοιχεία</td>
+
+                                        </tr>
+
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+
+                                </table>
+    
+                            </form>
+                            
+                        </div>
+
+                    
+                    <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                    </div>
+
+
+                    </div>
+
+            
+                    <!-- Content 2 (initially hidden) -->
+                    <div id="content4" class="block mt-4 sm:hidden">
+
+
+                        <!--grid: megalo(3 grammes x 4 stoiles), mesaio(4 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                        <div class="grid grid-cols-1 gap-2 p-2 mt-4 md:gap-3 md:grid-cols-2 xl:grid-cols-3 xl:gap-4">
+
+                            <!-- Card 1 -->
+                            <div class="p-2 border border-gray-300 rounded-lg shadow-lg bg-col-2">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>Προηγούμενο Υπόλοιπο </div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>0,00</div>
+                                </div>
+                            
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>30/03/2023 </div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Εισφορά</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div>3 - 2023</div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 3 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>01/04/2023 </div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Αγορά Μεριδίων</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 4 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>27/04/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Εισφορά</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div>4 - 2023</div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 5 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>01/05/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Αγορά Μεριδίων</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 6 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>30/05/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Εισφορά</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div>5 - 2023</div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 7 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>01/06/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Αγορά Μεριδίων</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 8 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>29/06/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Εισφορά</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div>6 - 2023</div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 9 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>01/07/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Αγορά Μεριδίων</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 10 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>28/07/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Εισφορά</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div>7 - 2023</div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 11 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>01/08/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Αγορά Μεριδίων</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 12 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>30/08/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Εισφορά</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div>8 - 2023</div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+
+                            
+                            <!-- Card 13 -->
+                            <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                                <div class="grid grid-cols-2 gap-2 ">
+                                    <div class="font-semibold">Ημερομηνία:</div>
+                                    <div>01/09/2023</div>
+                                    <div class="font-semibold">Είδος Λογαριασμού:</div>
+                                    <div>Τακτική Εισφορά Ασφαλισμένου</div>
+                                    <div class="font-semibold">Είδος Κίνησης:</div>
+                                    <div>Αγορά Μεριδίων</div>
+                                    <div class="font-semibold">Περιγραφή:</div>
+                                    <div></div>
+                                    <div class="font-semibold">Ευρώ:</div>
+                                    <div>Στοιχεία</div>
+                                </div>
+                            
+                            </div>
+                        
+                        <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <!--Telos Emfanisei pinakwn-->
+
+        <!--Telos to ej.kouti-->
+        </div>
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="p-1 bg-white xl:p-2 max-h-28">
+            <!-- Footer content here -->
+                                    
+            <div class="flex-col justify-center text-center">
+
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script>
+        function calculateHSL(hexColor) {
+            hexColor = hexColor.replace('#', '');
+            const r = parseInt(hexColor.slice(0, 2), 16) / 255;
+            const g = parseInt(hexColor.slice(2, 4), 16) / 255;
+            const b = parseInt(hexColor.slice(4, 6), 16) / 255;
+            const max = Math.max(r, g, b);
+            const min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max === min) {
+                h = s = 0;
+            } else {
+                const d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                        break;
+                }
+                h /= 6;
+            }
+            
+            return [h * 360, s * 100, l * 100];
+        }
+
+        function updateTextColor(elementId, hexColor) {
+            const element = document.getElementById(elementId);
+            const hslValues = calculateHSL(hexColor);
+            const lightness = hslValues[2];
+            const saturation = hslValues[1];
+            
+            if ((lightness > 65) || (lightness >= 50 && saturation > 65)) {
+                element.style.color = 'black';
+            } else {
+                element.style.color = 'white';
+            }
+
+            element.style.backgroundColor = hexColor;
+
+            // Update the selected color display
+            const selectedColorDisplay = document.getElementById('selected-color');
+            selectedColorDisplay.textContent = `Selected Color: ${hexColor}`;
+            selectedColorDisplay.style.backgroundColor = hexColor;
+
+            const selectedColorDisplay_2 = document.getElementById('selected-color_2');
+            selectedColorDisplay_2.textContent = `Selected Color: ${hexColor}`;
+            selectedColorDisplay_2.style.backgroundColor = hexColor;
+
+        }
+
+        const colorPickers = document.querySelectorAll('.color-picker');
+        const elements = document.querySelectorAll('.element');
+
+        // Add an event listener to each color picker input
+        colorPickers.forEach(colorPicker => {
+            colorPicker.addEventListener('input', function () {
+                const selectedColor = colorPicker.value;
+
+                // Set the background color for all elements
+                elements.forEach(element => {
+                    element.style.backgroundColor = selectedColor;
+                });
+
+                // Update text color for all elements
+                elements.forEach(element => {
+                    updateTextColor(element.id, selectedColor);
+                });
+            });
+            
+            // Initial color change when the page loads
+            const initialColor = colorPicker.value;
+            elements.forEach(element => {
+                element.style.backgroundColor = initialColor;
+            });
+            elements.forEach(element => {
+                updateTextColor(element.id, initialColor);
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const main = document.querySelector('main');
+            const footer = document.getElementById('sticky-footer');
+            
+            // Function to adjust footer position
+            const adjustFooter = () => {
+                const windowHeight = window.innerHeight;
+                const mainHeight = main.clientHeight;
+
+
+                if (mainHeight <= windowHeight) {
+                    // Add Tailwind CSS classes for sticky footer
+                    footer.classList.remove('static');
+                    footer.classList.add('fixed', 'bottom-0', 'w-full');
+                } else {
+                    // Remove sticky classes
+                    footer.classList.remove('fixed', 'bottom-0', 'w-full');
+                    footer.classList.add('static');
+                }
+            };
+
+            // Call the function initially and on window resize
+            adjustFooter();
+            window.addEventListener('resize', adjustFooter);
+        });
+    </script>
+    
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('-left-64');
+            menu.classList.add('left-0');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('left-0');
+            menu.classList.add('-left-64');
+        });
+    </script>
+
+    <script>
+        // JavaScript to toggle content visibility and image source
+        const toggleImage = document.getElementById('toggleImage');
+        const content1 = document.getElementById('content1');
+        const content2 = document.getElementById('content2');
+        const content3 = document.getElementById('content3');
+        const content4 = document.getElementById('content4');
+        let isContent1Visible = true;
+
+        toggleImage.addEventListener('click', () => {
+            if (isContent1Visible) {
+                content1.style.display = 'none';
+                content2.style.display = 'block';
+                content3.style.display = 'none';
+                content4.style.display = 'block';
+                toggleImage.src = 'img/view-list-svgrepo-com.svg'; // Change to your hide image source
+            } else {
+                content1.style.display = 'block';
+                content2.style.display = 'none';
+                content3.style.display = 'block';
+                content4.style.display = 'none';
+                toggleImage.src = 'img/grid-svgrepo-com.svg'; // Change to your show image source
+            }
+            isContent1Visible = !isContent1Visible;
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr("#from,#to", {
+            dateFormat: "d/m/Y", // Customize the date format as ΗΗ/ΜΜ/ΕΕΕΕ
+            allowInput: true, // Allow manual input
+            locale: {
+                firstDayOfWeek: 1, // Monday as the first day of the week
+                weekdays: {
+                    shorthand: ["Κυρ", "Δευ", "Τρι", "Τετ", "Πεμ", "Παρ", "Σαβ"],
+                    longhand: [
+                        "Κυριακή",
+                        "Δευτέρα",
+                        "Τρίτη",
+                        "Τετάρτη",
+                        "Πέμπτη",
+                        "Παρασκευή",
+                        "Σάββατο",
+                    ],
+                },
+                months: {
+                    shorthand: [
+                        "Ιαν",
+                        "Φεβ",
+                        "Μάρ",
+                        "Απρ",
+                        "Μάι",
+                        "Ιούν",
+                        "Ιούλ",
+                        "Αυγ",
+                        "Σεπ",
+                        "Οκτ",
+                        "Νοέ",
+                        "Δεκ",
+                    ],
+                    longhand: [
+                        "Ιανουάριος",
+                        "Φεβρουάριος",
+                        "Μάρτιος",
+                        "Απρίλιος",
+                        "Μάιος",
+                        "Ιούνιος",
+                        "Ιούλιος",
+                        "Αύγουστος",
+                        "Σεπτέμβριος",
+                        "Οκτώβριος",
+                        "Νοέμβριος",
+                        "Δεκέμβριος",
+                    ],
+                },
+            },
+        });
+    </script>
+
+</body>
+</html>

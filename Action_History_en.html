@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action_History_EN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="grid grid-cols-5 font-sans bg-gray-200">
+
+    <!--TO 1/5 ths ofonhs to sidebar-->
+    <aside class="hidden min-h-screen col-start-1 col-end-2 text-white sm:block bg-custom-new-blue element" id="element1">
+        <!-- Sidebar content here -->
+
+        <!-- Fixed Content (remains visible while scrolling) -->
+        <div class="fixed top-0 w-1/5 bg-custom-new-blue element" id="element2">
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Member Portal</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg ">
+                <!-- Menu Items -->
+                
+                <li class=" hover:bg-blue-300">
+                    <a href="Dashboard_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Member Information</span>
+                        </div>
+                    </a> 
+                </li>              
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Contributions</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Personal Account</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Documents</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ADMINISTRATOR</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members_en.html" class="flex items-center px-4 py-2">
+                        
+                        <i class="fa fa-users text-slate-300 group-hover:text-white"
+                            aria-hidden="true"></i>
+                        <span class="">Members</span>
+                            
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center">
+                            <i class="fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span> Users</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Action History</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+                <div id="selected-color" class="px-4 py-2 rounded-lg">Selected Color: #0582ca</div>
+            </div>
+            
+        </div>
+          
+    </aside>
+
+    <!--Responsive Design-->
+    <!-- Sidebar Menu 2 -->
+    <aside id="menu" class="fixed top-0 z-20 w-64 h-full overflow-y-auto transition-transform duration-300 ease-in-out transform element -left-64 sm:hidden" >
+    <div id="element30">
+        <!-- Sidebar content here -->
+        <div class="p-4 element"  id="element31">
+            <button id="close-menu" class="absolute text-xl top-4 right-4 hover:text-gray-800 focus:outline-none">
+                &times;
+            </button>
+          
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white text-end fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Member Portal</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Dashboard_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center "></div>
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Member Information</span>
+                        <div class="items-center "></div>
+                    </a> 
+                </li>               
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Contributions</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Personal Account</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Documents</span>
+                        </div>    
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ADMINISTRATOR</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Members</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span> Users</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Action History</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Circular Color Picker with Default Value -->
+            <h3 class="flex justify-center p-2">Color Picker</h3>
+            <div class="flex justify-center p-2">
+                <input type="color" class="w-10 h-10 p-5 bg-transparent border-4 border-white rounded-full cursor-pointer color-picker" value="#0582ca">
+                <div id="selected-color_2" class="px-4 py-2 rounded-lg">Selected Color: #0582ca</div>
+            </div>
+
+        </div>
+    </div>
+    </aside>
+
+    <!--Ta 4/5 to kurio periexomeno-->
+    <main class="flex flex-col min-h-screen col-start-1 col-end-6 sm:col-start-2 sm:col-end-6">
+
+        <!-- Header -->
+
+        <header class="fixed top-0 grid items-center justify-between w-full grid-cols-5 p-2 bg-white max-h-20">
+
+            <div class="col-start-1 col-end-2 sm:hidden">
+                <!-- Menu Toggle Button -->
+                <button id="menu-toggle" class="fixed top-0 left-0 z-50 m-4 text-2xl focus:outline-none">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+            </div>
+
+            <p class="col-start-2 col-end-3 p-1 text-sm sm:col-start-1 sm:col-end-2 sm:p-2 sm:text-lg md:text-2xl">TEAAPL</p>
+
+            <div class="flex items-center justify-start col-start-3 col-end-6 p-2 sm:justify-end sm:col-start-3 sm:col-end-5 2xl:justify-start 2xl:col-start-4 2xl:col-end-6">
+
+                <img src="img/flag-for-united-kingdom-svgrepo-com.svg" alt="flag-for-united-kingdom" class="w-6 h-6 md:p-2 md:w-12 md:h-12">
+
+                <div class="flex items-center p-1 border-l sm:p-2">
+                    
+                    <p class="p-1 text-sm sm:p-2 lg:text-base">Member Name</p>
+
+                    <i class="fa-solid fa-circle-user fa-2x"></i>
+
+                </div>
+
+            </div>
+            
+        </header>
+
+        <div class="p-4 mt-20 ">
+        <!-- Main content here -->
+            
+            <!--Dashboard-->
+            <div class="flex items-center justify-center p-2 ml-2 sm:justify-start max-h-20">
+
+                <i class=" fa fa-history fa-2x group-hover:text-white" aria-hidden="true"></i>
+
+                <p class="px-2 text-3xl">Action History</p>
+
+            </div>
+
+            
+            <div class="py-4 mx-auto mt-4 ml-2 rounded-lg shadow-lg bg-col-1">
+                
+                <form class="flex flex-col items-center space-y-2 sm:space-y-0 sm:flex-row">
+                    <!-- From Date Field -->
+                    <div class="flex items-center mr-4">
+                        <label for="from_1" class="block px-2 text-sm font-medium text-gray-700 md:text-base xl:text-lg"> Reference Date </label>
+                        <input type="date" id="from_1" name="from_1" placeholder="DD/MM/YYYY" class="px-4 py-2 text-sm border border-gray-300 rounded-md xl:w-40 sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+                    </div>
+        
+                    
+                    <div class="hidden xl:flex xl:items-center ">
+
+                        <!-- Submit Button -->
+                        <button type="submit" 
+                            class="w-48 px-5 py-3 text-base font-medium text-white rounded-md bg-custom-new-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 element" id="element4">
+                            <span><i class=" fa fa-search group-hover:text-white" aria-hidden="true"></i></span>
+                            Show
+                        </button>
+
+
+                    </div>
+                    
+                </form>
+
+                <form class="flex flex-col items-center justify-start p-4 mt-2 ml-4 space-y-2 xl:hidden sm:justify-normal sm:flex-row sm:space-y-0">
+                                      
+
+                    <!-- Submit Button -->
+                    <button type="submit" 
+                        class="w-48 px-5 py-3 text-base font-medium text-white rounded-md bg-custom-new-blue hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 element" id="element5">
+                        <span><i class=" fa fa-search group-hover:text-white" aria-hidden="true"></i></span>
+                        Show
+                    </button>
+
+                    
+                </form>
+                
+            </div>
+
+            <div class="flex flex-col items-center justify-between md:flex-row">
+
+                <div class="flex items-center ml-3">
+
+                    <p class="p-2 text-base xl:text-lg">
+                        Show
+                    </p>
+
+                    <div class="p-2">
+                        <label for="Number_reports" class="block text-sm font-medium text-gray-700"></label>
+                        <input type="number" id="Number_reports" name="Number_reports" placeholder="10"
+                        class="block w-20 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-700 " required>
+                    </div>
+
+
+                    <p class="p-2 text-base xl:text-lg">
+                        entries
+                    </p>
+
+                </div>
+
+
+                <form class="flex flex-row items-center justify-start p-2 space-y-2 sm:space-y-0 ">                
+                    
+                    <!-- Export Button -->
+                    <button type="button" 
+                    class="w-32 px-1 py-3 ml-2 text-base font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700">
+                    Search:
+                    </button>
+
+                        
+                    <label for="from_1" class="block px-2 text-sm font-medium text-gray-700 md:text-base xl:text-lg "></label>
+                    <input type="text" id="from_1" name="from_1" class="w-40 px-2 py-2 text-sm border border-gray-300 rounded-md xl:w-1/2 sm:text-lg focus:outline-none focus:ring-2 focus:ring-blue-700" required>
+
+
+                </form>
+            
+            </div>
+
+        </div>
+
+            <!--Emfanisei pinakwn-->
+            <div class="container p-4 mx-auto">
+                                        
+                <!-- Button to toggle content -->
+                <!-- Image to toggle content img/table-alt-svgrepo-com.svg  -->
+                <img id="toggleImage" src="img/grid-svgrepo-com.svg" alt="Show Content 1" class="w-10 h-10 ml-6 cursor-pointer">
+        
+                <!-- Content 1 (initially displayed) -->
+                <div id="content1" class="hidden mt-4 sm:block">
+
+
+                    <!--grid: megalo(3 grammes x 4 stoiles), mesaio(4 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                    <div class="overflow-x-auto">
+        
+                        <div class="container py-8 mx-auto ">
+
+                            <form class="p-0 text-xs sm:p-4 sm:text-sm xl:text-base">
+                                <table class="w-full border border-gray-300 min-w-min">
+                                    <thead>
+                                        <tr class="font-sans text-left align-top bg-white">
+                                            <th class="w-40 p-2 border-b border-r ">Timestamp</th>
+                                            <th class="p-2 border-b border-r w-60 ">Action</th>
+                                            <th class="p-2 border-b border-r w-52 ">Parameters</th>
+                                            <th class="w-40 p-2 border-b border-r ">IP Address</th>
+                                            <th class="w-32 p-2 border-b border-r ">Platform</th>
+                                            <th class="w-40 p-2 border-b border-r ">Browser</th>
+                                            <th class="w-40 p-2 border-b border-r ">BrowserVersion</th>
+                                            <th class="w-40 p-2 border-b border-r ">Username</th>
+                                            <th class="w-40 p-2 border-b border-r ">Memberld</th>
+                                            <th class="w-40 p-2 border-b border-r ">UserId</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- Add your table rows here -->
+                                        <!--Row Start-->
+                                        <tr class="text-left align-top border-gray-400">
+                                            <td class="h-40 p-2 border-r border-gray-400">2023-09-06 11:45:26</td>
+                                            <td class="p-2 border-r border-gray-400">Insured - Account</td>
+                                            <td class="p-2 border-r border-gray-400">
+                                                FromDate: 2023-09-06T00:00:00+02:00
+                                                ToDate: 2023-09-06T00:00:00
+                                                exportType: null
+                                            </td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Windows 10</td>
+                                            <td class="p-2 border-r border-gray-400">Chrome</td>
+                                            <td class="p-2 border-r border-gray-400">114.0</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400 ">Stoixeia</td>
+                                        </tr>
+                                        <!--Row 1-->
+                                        <tr class="text-left align-top bg-white " >
+                                            <td class="h-40 p-2 border-b border-r">2023-09-06 11:45:06</td>
+                                            <td class="p-2 border-b border-r">Insured - Contributions</td>
+                                            <td class="p-2 border-b border-r">
+                                                FromDate: 2023-09-06T00:00:00+02:00
+                                                ToDate: 2023-09-06T00:00:00
+                                                exportType: null
+                                            </td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                            <td class="p-2 border-b border-r">Windows 10</td>
+                                            <td class="p-2 border-b border-r">Chrome</td>
+                                            <td class="p-2 border-b border-r">114.0</td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                        </tr>
+                                        <!--Row 2-->
+                                        <tr class="text-left align-top" >
+                                            <td class="h-40 p-2 border-r border-gray-400">2023-09-06 11:31:16</td>
+                                            <td class="p-2 border-r border-gray-400">Account - LogOff</td>
+                                            <td class="p-2 border-r border-gray-400"></td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Mac OS</td>
+                                            <td class="p-2 border-r border-gray-400">SAFARI</td>
+                                            <td class="p-2 border-r border-gray-400">16.6</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                        </tr>
+                                        <!--Row 3-->
+                                        <tr class="text-left align-top bg-white " >
+                                            <td class="h-40 p-2 border-b border-r">2023-09-06 11:31:01</td>
+                                            <td class="p-2 border-b border-r">Insured - Account</td>
+                                            <td class="p-2 border-b border-r">
+                                                FromDate: 2023-09-06T00:00:00+02:00
+                                                ToDate: 2023-09-06T00:00:00
+                                                exportType: null
+                                            </td>
+                                            <td class="h-40 p-2 border-b border-r">Stoixeia</td>
+                                            <td class="p-2 border-b border-r">Mac OS</td>
+                                            <td class="p-2 border-b border-r">SAFARI</td>
+                                            <td class="p-2 border-b border-r">16.6</td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                            <td class="p-2 border-b border-r">Stoixeia</td>
+                                        </tr>
+                                        <!--Row 4-->
+                                        <tr class="text-left align-top" >
+                                            <td class="h-40 p-2 border-r border-gray-400">2023-09-06</td>
+                                            <td class="p-2 border-r border-gray-400">Account - Login</td>
+                                            <td class="p-2 border-r border-gray-400">Result: Successful</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Mac OS</td>
+                                            <td class="p-2 border-r border-gray-400">SAFARI</td>
+                                            <td class="p-2 border-r border-gray-400">16.6</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                            <td class="p-2 border-r border-gray-400">Stoixeia</td>
+                                        </tr>
+                                        
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+
+                                </table>
+    
+                            </form>
+                            
+                        </div>
+
+                    
+                    <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                    </div>
+
+                </div>
+
+        
+                <!-- Content 2 (initially hidden) -->
+                <div id="content2" class="block mt-4 sm:hidden">
+
+
+                    <!--grid: megalo(3 grammes x 4 stoiles), mesaio(4 grammes x 2 stoiles), mikro(6 grammes x 1 stoiles)-->
+                    <div class="grid grid-cols-1 gap-2 p-2 mt-4 md:gap-3 md:grid-cols-2 xl:grid-cols-3 xl:gap-4">
+
+                        <!-- Card 1 -->
+                        <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                            <div class="grid grid-cols-2 gap-2 ">
+                                <div class="font-semibold">Timestamp:</div>
+                                <div>2023-09-06 11:45:26</div>
+                                <div class="font-semibold">Action:</div>
+                                <div>Insured - Account</div>
+                                <div class="font-semibold">Parameters:</div>
+                                <div>
+                                    FromDate: 2023-09-06T00:00:00+02:00
+                                    ToDate: 2023-09-06T00:00:00
+                                    exportType: null
+                                </div>
+                                <div class="font-semibold">IP Address:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Platform:</div>
+                                <div>Windows 10</div>
+                                <div class="font-semibold">Browser:</div>
+                                <div>Chrome</div>
+                                <div class="font-semibold">BrowserVersion:</div>
+                                <div>114.0</div>
+                                <div class="font-semibold">Username:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Memberld:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">UserId:</div>
+                                <div>Stoixeia</div>
+                            </div>
+                        
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                            <div class="grid grid-cols-2 gap-2 ">
+                                <div class="font-semibold">Timestamp:</div>
+                                <div>2023-09-06 11:45:06</div>
+                                <div class="font-semibold">Action:</div>
+                                <div>Insured - Contributions</div>
+                                <div class="font-semibold">Parameters:</div>
+                                <div>
+                                    FromDate: 2023-09-06T00:00:00+02:00
+                                    ToDate: 2023-09-06T00:00:00
+                                    exportType: null
+                                </div>
+                                <div class="font-semibold">IP Address:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Platform:</div>
+                                <div>Windows 10</div>
+                                <div class="font-semibold">Browser:</div>
+                                <div>Chrome</div>
+                                <div class="font-semibold">BrowserVersion:</div>
+                                <div>114.0</div>
+                                <div class="font-semibold">Username:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Memberld:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">UserId:</div>
+                                <div>Stoixeia</div>
+                            </div>
+                        
+                        </div>
+
+                        
+                        <!-- Card 3 -->
+                        <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                            <div class="grid grid-cols-2 gap-2 ">
+                                <div class="font-semibold">Timestamp:</div>
+                                <div>2023-09-06 11:31:16</div>
+                                <div class="font-semibold">Action:</div>
+                                <div>Account - LogOff</div>
+                                <div class="font-semibold">Parameters:</div>
+                                <div>
+                                </div>
+                                <div class="font-semibold">IP Address:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Platform:</div>
+                                <div>Mac OS</div>
+                                <div class="font-semibold">Browser:</div>
+                                <div>SAFARI</div>
+                                <div class="font-semibold">BrowserVersion:</div>
+                                <div>16.6</div>
+                                <div class="font-semibold">Username:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Memberld:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">UserId:</div>
+                                <div>Stoixeia</div>
+                            </div>
+                        
+                        </div>
+
+                        
+                        <!-- Card 4 -->
+                        <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                            <div class="grid grid-cols-2 gap-2 ">
+                                <div class="font-semibold">Timestamp:</div>
+                                <div>2023-09-06 11:31:01</div>
+                                <div class="font-semibold">Action:</div>
+                                <div>Insured - Account</div>
+                                <div class="font-semibold">Parameters:</div>
+                                <div>
+                                    FromDate: 2023-09-06T00:00:00+02:00
+                                    ToDate: 2023-09-06T00:00:00
+                                    exportType: null
+                                </div>
+                                <div class="font-semibold">IP Address:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Platform:</div>
+                                <div>Mac OS</div>
+                                <div class="font-semibold">Browser:</div>
+                                <div>SAFARI</div>
+                                <div class="font-semibold">BrowserVersion:</div>
+                                <div>16.6</div>
+                                <div class="font-semibold">Username:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Memberld:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">UserId:</div>
+                                <div>Stoixeia</div>
+                            </div>
+                        
+                        </div>
+
+                        
+                        <!-- Card 5 -->
+                        <div class="p-2 bg-white border border-gray-300 rounded-lg shadow-lg">
+
+                            <div class="grid grid-cols-2 gap-2 ">
+                                <div class="font-semibold">Timestamp:</div>
+                                <div>2023-09-06</div>
+                                <div class="font-semibold">Action:</div>
+                                <div>Account - Login</div>
+                                <div class="font-semibold">Parameters:</div>
+                                <div>
+                                    Result: Successful
+                                </div>
+                                <div class="font-semibold">IP Address:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Platform:</div>
+                                <div>Mac OS</div>
+                                <div class="font-semibold">Browser:</div>
+                                <div>SAFARI</div>
+                                <div class="font-semibold">BrowserVersion:</div>
+                                <div>16.6</div>
+                                <div class="font-semibold">Username:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">Memberld:</div>
+                                <div>Stoixeia</div>
+                                <div class="font-semibold">UserId:</div>
+                                <div>Stoixeia</div>
+                            </div>
+                        
+                        </div>
+
+                    <!--Telos grid megalo (5 gramms x 4 stoiles)-->
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Telos Emfanisei pinakwn-->  
+
+            
+        <!--Telos to ej.kouti-->
+        </div>
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="p-1 bg-white xl:p-2 max-h-28">
+            <!-- Footer content here -->
+                                    
+            <div class="flex-col justify-center text-center">
+
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script>
+        function calculateHSL(hexColor) {
+            hexColor = hexColor.replace('#', '');
+            const r = parseInt(hexColor.slice(0, 2), 16) / 255;
+            const g = parseInt(hexColor.slice(2, 4), 16) / 255;
+            const b = parseInt(hexColor.slice(4, 6), 16) / 255;
+            const max = Math.max(r, g, b);
+            const min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max === min) {
+                h = s = 0;
+            } else {
+                const d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                        break;
+                }
+                h /= 6;
+            }
+            
+            return [h * 360, s * 100, l * 100];
+        }
+
+        function updateTextColor(elementId, hexColor) {
+            const element = document.getElementById(elementId);
+            const hslValues = calculateHSL(hexColor);
+            const lightness = hslValues[2];
+            const saturation = hslValues[1];
+            
+            if ((lightness > 65) || (lightness >= 50 && saturation > 65)) {
+                element.style.color = 'black';
+            } else {
+                element.style.color = 'white';
+            }
+
+                                                                        
+            element.style.backgroundColor = hexColor;
+
+            // Update the selected color display
+            const selectedColorDisplay = document.getElementById('selected-color');
+            selectedColorDisplay.textContent = `Selected Color: ${hexColor}`;
+            selectedColorDisplay.style.backgroundColor = hexColor;
+
+            const selectedColorDisplay_2 = document.getElementById('selected-color_2');
+            selectedColorDisplay_2.textContent = `Selected Color: ${hexColor}`;
+            selectedColorDisplay_2.style.backgroundColor = hexColor;
+
+            
+        }
+
+        const colorPickers = document.querySelectorAll('.color-picker');
+        const elements = document.querySelectorAll('.element');
+        const elements_border = document.querySelectorAll('.element_border');
+
+        // Add an event listener to each color picker input
+        colorPickers.forEach(colorPicker => {
+            colorPicker.addEventListener('input', function () {
+                const selectedColor = colorPicker.value;
+
+                // Set the background color for all elements
+                elements.forEach(element => {
+                    element.style.backgroundColor = selectedColor;
+                    
+                });
+
+
+                // Set the borderColor color for all elements
+                elements_border.forEach(element => {
+                element.style.borderColor = selectedColor;    
+                });
+
+
+                // Update text color for all elements
+                elements.forEach(element => {
+                    updateTextColor(element.id, selectedColor);
+                });
+            
+            });
+            
+            // Initial color change when the page loads
+            const initialColor = colorPicker.value;
+            elements.forEach(element => {
+                element.style.backgroundColor = initialColor;
+            });
+            elements.forEach(element => {
+                updateTextColor(element.id, initialColor);
+            });
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const main = document.querySelector('main');
+            const footer = document.getElementById('sticky-footer');
+            
+            // Function to adjust footer position
+            const adjustFooter = () => {
+                const windowHeight = window.innerHeight;
+                const mainHeight = main.clientHeight;
+
+                if (mainHeight <= windowHeight) {
+                    // Add Tailwind CSS classes for sticky footer
+                    footer.classList.remove('static');
+                    footer.classList.add('fixed', 'bottom-0', 'w-full');
+                } else {
+                    // Remove sticky classes
+                    footer.classList.remove('fixed', 'bottom-0', 'w-full');
+                    footer.classList.add('static');
+                }
+            };
+
+            // Call the function initially and on window resize
+            adjustFooter();
+            window.addEventListener('resize', adjustFooter);
+        });
+    </script>
+    
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('-left-64');
+            menu.classList.add('left-0');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('left-0');
+            menu.classList.add('-left-64');
+        });
+    </script>
+
+<script>
+    // JavaScript to toggle content visibility and image source
+    const toggleImage = document.getElementById('toggleImage');
+    const content1 = document.getElementById('content1');
+    const content2 = document.getElementById('content2');
+
+    let isContent1Visible = true;
+
+    toggleImage.addEventListener('click', () => {
+        if (isContent1Visible) {
+            content1.style.display = 'none';
+            content2.style.display = 'block';
+            toggleImage.src = 'img/view-list-svgrepo-com.svg'; // Change to your hide image source
+        } else {
+            content1.style.display = 'block';
+            content2.style.display = 'none';
+            toggleImage.src = 'img/grid-svgrepo-com.svg'; // Change to your show image source
+        }
+        isContent1Visible = !isContent1Visible;
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    flatpickr("#from_1", {
+        dateFormat: "d/m/Y", // Customize the date format as DD/MM/YYYY
+        allowInput: true, // Allow manual input
+    });
+</script>
+
+</body>
+</html>
