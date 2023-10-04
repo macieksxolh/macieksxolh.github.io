@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents_EN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="grid grid-cols-5 font-sans bg-gray-200">
+
+    <!--TO 1/5 ths ofonhs to sidebar-->
+    <aside class="hidden min-h-screen col-start-1 col-end-2 text-white sm:block bg-custom-new-blue element" id="element1">
+        <!-- Sidebar content here -->
+
+        <!-- Fixed Content (remains visible while scrolling) -->
+        <div class="fixed top-0 w-1/5 bg-custom-new-blue element" id="element2">
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Member Portal</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg ">
+                <!-- Menu Items -->
+                
+                <li class=" hover:bg-blue-300">
+                    <a href="Dashboard_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Member Information</span>
+                        </div>
+                    </a> 
+                </li>              
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Contributions</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Personal Account</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Documents</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ADMINISTRATOR</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members_en.html" class="flex items-center px-4 py-2">
+                        
+                        <i class="fa fa-users text-slate-300 group-hover:text-white"
+                            aria-hidden="true"></i>
+                        <span class=""> Members</span>
+                            
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center">
+                            <i class="fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Users</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Action History</span>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+
+            <div class="flex items-center justify-center mt-2 element">
+                <button id="col-toggle" class="flex items-center justify-center p-2 text-xl text-white border-2 rounded-full focus:outline-none element" >
+                    <span class="px-2"><img src="img/Firefly.jpg" alt="color-clicker" class="w-8 h-8 mx-auto rounded-full"></span>
+                    Select color
+                    <span class="px-2 element"><i id="arrowIcon" class="fa-solid fa-arrow-down"></i></span>
+                </button>
+            </div>
+            
+
+            <!-- First Color Picker Section --> 
+            <div id="col-menu" class="hidden">
+                <div class="color-picker-section">
+                    <div class="flex justify-center p-2">
+                        <!-- Color Clicker Button 1 -->
+                        <button class="relative w-10 h-10 focus:outline-none color-clicker">
+                            <img src="img/Firefly.jpg" alt="color-clicker" class="w-10 h-10 mx-auto rounded-full">
+                            <!-- Color Picker Input 1 -->
+                            <input type="color" class="absolute top-0 left-0 w-10 h-10 opacity-0 cursor-pointer color-picker" value="#0582ca">
+                        </button>
+                        
+                        <!-- Display Selected Color 1 -->
+                        <div class="px-4 py-2 font-semibold text-gray-800 rounded-lg selected-color element">Selected Color: #0582ca</div>
+                    </div>
+
+                    <div class="p-2 mt-4">
+                        <h2 class="text-lg font-semibold">Recent Color Choices:</h2>
+                        <div class="flex flex-wrap gap-2 mt-2 recent-colors"></div>
+                        <button class="px-4 py-2 mt-2 text-white rounded-lg save-color-button element">Save Color</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+          
+    </aside>
+
+    <!--Responsive Design-->
+    <!-- Sidebar Menu 2 -->
+    <aside id="menu" class="fixed top-0 z-20 w-64 h-full overflow-y-auto transition-transform duration-300 ease-in-out transform element -left-64 sm:hidden" >
+    <div id="element30">
+        <!-- Sidebar content here -->
+        <div class="p-4 element"  id="element31">
+            <button id="close-menu" class="absolute text-xl top-4 right-4 hover:text-gray-800 focus:outline-none">
+                &times;
+            </button>
+          
+            <!-- Sidebar content here -->
+            <div class="p-4 text-base font-semibold border-b sm:block lg:text-lg xl:text-2xl">
+
+                <div class="items-center ">
+
+                    <i class="text-white text-end fa-brands fa-superpowers fa-lg" style="color: #e9e2e2;" aria-hidden="true"></i>
+
+                    <span class="">Member Portal</span>
+
+                </div>
+            </div>
+            
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+                
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Dashboard_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-tachometer text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Dashboard</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Information_insured_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center "></div>
+                            <i class="fa fa-user text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Member Information</span>
+                        <div class="items-center "></div>
+                    </a> 
+                </li>               
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Contributions_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-balance-scale text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Contributions</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Personal_Account_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa-solid fa-piggy-bank text-slate-300 group-hover:text-white" 
+                                aria-hidden="true"></i>
+                            <span>Personal Account</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Documents_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class="fa fa-file text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Documents</span>
+                        </div>    
+                    </a>
+                </li>
+                
+            </ul>
+
+            <div class="p-2 text-xs font-semibold md:p-4 2xl:text-sm text-start">ADMINISTRATOR</div>
+            <ul class="flex flex-col p-2 text-sm sm:border-b lg:text-base 2xl:text-lg">
+                <!-- Menu Items -->
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Members_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span> Members</span>
+                        </div>    
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Users_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-users text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Users</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li class=" hover:bg-blue-300">
+                    <a href="Action_History_en.html" class="flex items-center px-4 py-2">
+                        <div class="items-center ">
+                            <i class=" fa fa-history text-slate-300 group-hover:text-white"
+                                aria-hidden="true"></i>
+                            <span>Action History</span>
+                        </div>    
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="flex items-center justify-center">
+                <button id="col-toggle-2" class="flex items-center justify-center p-2 text-xl text-white border-2 rounded-full sm:p-2 focus:outline-none element" >
+                    <span class="px-2"><img src="img/Firefly.jpg" alt="color-clicker" class="w-8 h-8 mx-auto rounded-full"></span>
+                    Select color
+                    <span class="px-2 element"><i id="arrowIcon-2" class="fa-solid fa-arrow-down"></i></span>
+                </button>
+            </div>
+
+            <div id="col-menu-2" class="hidden">
+                <!-- Second Color Picker Section -->
+                <div class="color-picker-section">
+                    <div class="flex justify-center p-2">
+                        <!-- Color Clicker Button 2 -->
+                        <button class="relative w-10 h-10 focus:outline-none color-clicker">
+                            <img src="img/Firefly.jpg" alt="color-clicker" class="w-8 h-8 mx-auto rounded-full">
+                            <!-- Color Picker Input 2 -->
+                            <input type="color" class="absolute top-0 left-0 w-10 h-10 opacity-0 cursor-pointer color-picker" value="#ff5733">
+                        </button>
+                        
+                        <!-- Display Selected Color 2 -->
+                        <div class="px-4 py-2 font-semibold text-gray-800 rounded-lg selected-color element">Selected Color: #ff5733</div>
+                    </div>
+
+                    <div class="p-2 mt-4">
+                        <h2 class="text-lg font-semibold">Recent Color Choices:</h2>
+                        <div class="flex flex-wrap gap-2 mt-2 recent-colors"></div>
+                        <button class="px-4 py-2 mt-2 text-white rounded-lg element save-color-button">Save Color</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </aside>
+
+    <!--Ta 4/5 to kurio periexomeno-->
+    <main class="flex flex-col min-h-screen col-start-1 col-end-6 sm:col-start-2 sm:col-end-6">
+
+        <!-- Header -->
+
+        <header class="fixed top-0 grid items-center justify-between w-full grid-cols-5 p-2 bg-white max-h-20">
+
+            <div class="col-start-1 col-end-2 sm:hidden">
+                <!-- Menu Toggle Button -->
+                <button id="menu-toggle" class="fixed top-0 left-0 z-50 m-4 text-2xl focus:outline-none">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+            </div>
+
+            <p class="col-start-2 col-end-3 p-1 text-sm sm:col-start-1 sm:col-end-2 sm:p-2 sm:text-lg md:text-2xl">TEAAPL</p>
+
+            <div class="flex items-center justify-start col-start-3 col-end-6 p-2 sm:justify-end sm:col-start-3 sm:col-end-5 2xl:justify-start 2xl:col-start-4 2xl:col-end-6">
+
+                <img src="img/flag-for-united-kingdom-svgrepo-com.svg" alt="flag-for-united-kingdom" class="w-6 h-6 md:p-2 md:w-12 md:h-12">
+
+                <div class="flex items-center p-1 border-l sm:p-2">
+                    
+                    <p class="p-1 text-sm sm:p-2 lg:text-base">Member Name</p>
+
+                    <i class="fa-solid fa-circle-user fa-2x"></i>
+
+                </div>
+
+            </div>
+            
+        </header>
+
+        <div class="p-4 my-20">
+        <!-- Main content here -->
+            
+            <!--Dashboard-->
+            <div class="flex items-center justify-center p-2 ml-2 sm:justify-start max-h-20">
+
+                <i class="fa fa-file fa-2x group-hover:text-white" aria-hidden="true"></i>
+
+                <p class="px-2 text-3xl">Documents</p>
+
+            </div>
+
+            <div class="w-5/6 px-6 ml-6 bg-white rounded-md shadow-md md:w-1/2 lg:w-1/3">
+
+                <div class="flex items-center justify-between py-4">
+
+                    <p class="text-base md:text-lg xl:text-xl">
+                        Annual Statement
+                    </p>
+
+                    <p class="px-1 text-white rounded-lg shadow-lg bg-cyan-500">
+                        6
+                    </p>
+
+                </div>
+
+                <div class="flex items-center justify-between py-4">
+
+                    <p class="text-base md:text-lg xl:text-xl">
+                        Tax Clearence
+                    </p>
+
+                    <p class="px-1 text-white rounded-lg shadow-lg bg-cyan-500">
+                        1
+                    </p>
+
+                </div>
+
+            </div>
+            
+ 
+        <!--Telos to ej.kouti-->
+        </div>
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="p-1 bg-white xl:p-2 max-h-28">
+            <!-- Footer content here -->
+                                    
+            <div class="flex-col justify-center text-center">
+
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Developed by SOFTBIZ</p>
+                <p class="p-1 mr-10 text-xs xl:p-2 xl:text-sm" >Copyright &copy;  2023  teaapl All Rights Reserved.</p>
+                
+            </div>
+
+        </footer>
+
+    </main>
+    <script>
+        // Function to calculate HSL values from hex color
+        function calculateHSL(hexColor) {
+            hexColor = hexColor.replace('#', '');
+            const r = parseInt(hexColor.slice(0, 2), 16) / 255;
+            const g = parseInt(hexColor.slice(2, 4), 16) / 255;
+            const b = parseInt(hexColor.slice(4, 6), 16) / 255;
+            const max = Math.max(r, g, b);
+            const min = Math.min(r, g, b);
+            let h, s, l = (max + min) / 2;
+
+            if (max === min) {
+                h = s = 0;
+            } else {
+                const d = max - min;
+                s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+                switch (max) {
+                    case r:
+                        h = (g - b) / d + (g < b ? 6 : 0);
+                        break;
+                    case g:
+                        h = (b - r) / d + 2;
+                        break;
+                    case b:
+                        h = (r - g) / d + 4;
+                        break;
+                }
+                h /= 6;
+            }
+
+            return [h * 360, s * 100, l * 100];
+        }
+
+        // Function to convert hex color to RGB
+        function hexToRgb(hexColor) {
+            const hex = hexColor.replace(/^#/, '');
+            const bigint = parseInt(hex, 16);
+            const r = (bigint >> 16) & 255;
+            const g = (bigint >> 8) & 255;
+            const b = bigint & 255;
+            return [r, g, b];
+        }
+
+        // Function to update text color and background color
+        function updateElementColors(elements, hexColor) {
+            const hslValues = calculateHSL(hexColor);
+            const lightness = hslValues[2];
+            const saturation = hslValues[1];
+
+            if ((lightness > 65) || (lightness >= 50 && saturation > 65)) {
+                elements.style.color = 'black';
+            } else {
+                elements.style.color = 'white';
+            }
+
+            elements.style.backgroundColor = hexColor;
+
+
+        }
+
+        // Store recent colors
+        const recentColors = [];
+
+        // Event listeners for all Color Picker Sections
+        const colorPickerSections = document.querySelectorAll('.color-picker-section');
+
+        colorPickerSections.forEach(section => {
+            const colorClicker = section.querySelector('.color-clicker');
+            const colorPicker = section.querySelector('.color-picker');
+            const selectedColorDisplay = section.querySelector('.selected-color');
+            const saveColorButton = section.querySelector('.save-color-button');
+            const recentColorsContainer = section.querySelector('.recent-colors');
+            
+
+            colorClicker.addEventListener('click', () => {
+                colorPicker.style.display = 'block';
+                colorPicker.focus();
+            });
+
+            saveColorButton.addEventListener('click', () => {
+                const temporaryColor = colorPicker.value;
+                if (!recentColors.includes(temporaryColor)) {
+                    recentColors.unshift(temporaryColor);
+                }
+                displayRecentColors(recentColors, document.querySelectorAll('.recent-colors'));
+
+                if (recentColors.length > 10) {
+                    recentColors.pop();
+                }
+
+                const elements = document.querySelectorAll('.element');
+                elements.forEach(element => {
+                    updateElementColors(element, temporaryColor);
+                });
+
+                selectedColorDisplay.textContent = `Selected Color: ${temporaryColor}`;
+                selectedColorDisplay.style.backgroundColor = temporaryColor;
+
+                colorPicker.value = '';
+                colorPicker.style.display = 'none';
+            });
+
+            colorPicker.addEventListener('input', () => {
+                const temporaryColor = colorPicker.value;
+                selectedColorDisplay.textContent = `Selected Color: ${temporaryColor}`;
+                selectedColorDisplay.style.backgroundColor = temporaryColor;
+
+                const elements = document.querySelectorAll('.element');
+                elements.forEach(element => {
+                    updateElementColors(element, temporaryColor);
+                });
+
+                // Set the borderColor color for all elements
+                const elements_border = document.querySelectorAll('.element_border');
+                elements_border.forEach(element => {
+                element.style.borderColor = temporaryColor;    
+                });
+                
+            });
+        });
+
+        // Function to display recent colors for all sections
+        function displayRecentColors(colors, containers) {
+            containers.forEach(container => {
+                container.innerHTML = '';
+
+                colors.forEach(color => {
+                    const colorButton = document.createElement('button');
+                    colorButton.style.backgroundColor = color;
+                    colorButton.className = 'w-8 h-8 rounded-full border-2 border-white';
+                    colorButton.addEventListener('click', () => {
+                        // Update the temporary color when a recent color is clicked
+                        const temporaryColor = color;
+                        // Update all Color Picker Input values
+                        const colorPickers = document.querySelectorAll('.color-picker');
+                        colorPickers.forEach(colorPicker => {
+                            colorPicker.value = color;
+                        });
+                        // Trigger input event to update elements in all sections
+                        const inputEvent = new Event('input', { bubbles: true });
+                        colorPickers.forEach(colorPicker => {
+                            colorPicker.dispatchEvent(inputEvent);
+                        });
+                    });
+
+                    const rgbText = document.createElement('p');
+                    const [r, g, b] = hexToRgb(color);
+                    rgbText.textContent = `RGB: ${r}, ${g}, ${b}`;
+                    rgbText.className = 'text-sm text-gray-600 mt-1';
+
+                    container.appendChild(colorButton);
+                });
+            });
+        }
+
+        // Initial color change when the page loads for all sections
+        const initialColor = recentColors[0] || '#0582ca'; // Use the first recent color if available
+        const elements = document.querySelectorAll('.element');
+        elements.forEach(element => {
+            updateElementColors(element, initialColor);
+        });
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const main = document.querySelector('main');
+            const footer = document.getElementById('sticky-footer');
+            
+            // Function to adjust footer position
+            const adjustFooter = () => {
+                const windowHeight = window.innerHeight;
+                const mainHeight = main.clientHeight;
+
+                if (mainHeight <= windowHeight) {
+                    // Add Tailwind CSS classes for sticky footer
+                    footer.classList.remove('static');
+                    footer.classList.add('fixed', 'bottom-0', 'w-full');
+                } else {
+                    // Remove sticky classes
+                    footer.classList.remove('fixed', 'bottom-0', 'w-full');
+                    footer.classList.add('static');
+                }
+            };
+
+            // Call the function initially and on window resize
+            adjustFooter();
+            window.addEventListener('resize', adjustFooter);
+        });
+    </script>
+    
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const closeMenu = document.getElementById('close-menu');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('-left-64');
+            menu.classList.add('left-0');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('left-0');
+            menu.classList.add('-left-64');
+        });
+    </script>
+
+    <script>
+        const colToggle = document.getElementById('col-toggle');
+        const colmenu = document.getElementById('col-menu');
+        const arrowIcon = document.getElementById('arrowIcon');
+        let isUp = false;
+
+        colToggle.addEventListener('click', () => {
+            colmenu.classList.toggle('hidden');
+            colmenu.classList.toggle('translate-y-0');
+
+            if (isUp) {
+                arrowIcon.className = 'fa-solid fa-arrow-down';
+            } else {
+                arrowIcon.className = 'fa-solid fa-arrow-up';
+            }
+            isUp = !isUp;
+
+        });
+
+    </script>
+
+    <script>
+        const colToggle_2 = document.getElementById('col-toggle-2');
+        const colmenu_2 = document.getElementById('col-menu-2');
+        const arrowIcon_2 = document.getElementById('arrowIcon-2');
+        let isUp_2 = false;
+
+        colToggle_2.addEventListener('click', () => {
+            colmenu_2.classList.toggle('hidden');
+            colmenu_2.classList.toggle('translate-y-0');
+
+
+            if (isUp_2) {
+                arrowIcon_2.className = 'fa-solid fa-arrow-down';
+
+            } else {
+                arrowIcon_2.className = 'fa-solid fa-arrow-up';
+
+            }
+            isUp_2 = !isUp_2;
+
+        });
+
+    </script>
+
+</body>
+</html>
